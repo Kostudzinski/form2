@@ -1,0 +1,2178 @@
+@media (min-width: 1200px) and (max-width: 1680px) {
+  .kontakt_header .title:before, .kontakt_section .col-4:after {
+    width: 2px;
+  }
+  .rozwiazania .tabcontent .angle {
+	width: 60% !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .container {
+	max-width: 1000px !important;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1680px) {
+  .container {
+	max-width: 1200px !important;
+  }
+}
+@media (min-width: 1680px) {
+  html {
+	font-size: 10px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .kontakt_section {
+	padding: 40px 0;
+	.row {
+	  flex-direction: column;
+	  .col-8 {
+		order: 0;
+	  }
+	  .col-4 {
+		order: 1;
+	  }
+	  >* {
+		flex: 0 0 100%;
+		max-width: 100%;
+	  }
+	}
+	.contacts_form {
+	  margin: 0 -15px;
+	  padding: 0 15px 40px;
+	  box-shadow: 0 10px 30px 0 rgba(0,0,0,.1);
+	  .title {
+		font-size: 2.8rem;
+		text-align: left;
+	  }
+	  form {
+		margin-top: 3rem;
+		flex-direction: column;
+		.form_column {
+		  padding: 0;
+		  margin-bottom: 30px;
+		  align-items: center;
+		  &:last-child {
+			margin-bottom: 0;
+		  }
+		}
+	  }
+	}
+	.salon {
+	  margin-top: 40px;
+	  margin-bottom: 40px;
+	  .title {
+		font-size: 2.6rem;
+		line-height: 1.2;
+		margin-bottom: 10px;
+	  }
+	  .text {
+		font-size: 2.2rem;
+		line-height: 1.2;
+	  }
+	}
+	.col-4:after {
+	  display: none;
+	}
+  }
+  .map-form.contact_page {
+	height: 370px;
+	position: relative;
+	#cadxprt-map {
+	  display: block;
+	  height: 100% !important;
+	}
+  }
+  .technologie.services_3d {
+	margin-top: 0;
+	padding-top: 40px;
+	.title h1 {
+	  margin: 0 30px;
+	  font-size: 2.4rem;
+	}
+	.container .row .col {
+	  flex: 0 0 100%;
+	  max-width: 100%;
+	}
+  }
+  .services_banner {
+	height: 460px;
+	p {
+	  font-size: 2.2rem;
+	  line-height: 1.2;
+	  padding-right: 40px;
+	  margin-bottom: 20px;
+	}
+	&__text {
+	  padding-top: 20px;
+	  justify-content: flex-start;
+	  a {
+		padding: 1rem 10rem;
+		margin: 0;
+		align-self: center;
+		font-size: 2.2rem;
+		font-family: "TitilliumWeb Light" !important;
+	  }
+	}
+  }
+
+  .blog_header {
+	flex-direction: column;
+	height: auto;
+	.background_parallax {
+	  position: static;
+	  height: 110px;
+	  margin-top: 60px;
+	}
+	.header-content {
+	  padding: 20px 15px;
+	  .header-content_title {
+		h1 {
+		  font-size: 2.6rem;
+		}
+		.animate-h1-line-from-left {
+		  display: none !important;
+		}
+	  }
+	}
+  }
+  .blog_post {
+	.post_info_tags {
+	  display: none;
+	}
+	.post_content {
+	  padding: 0;
+	  font-size: 2.2rem;
+	  line-height: 1.2;
+	  .gradient_line {
+		margin: 20px 0;
+		background: linear-gradient(to right, rgba(222,223,222,1) 0%,rgba(255,255,255,0) 100%);
+	  }
+	  h2 {
+		font-size: 2.6rem;
+	  }
+	  blockquote {
+		padding: 25px 15px;
+	  }
+	  iframe {
+		height: 200px;
+	  }
+	  .post_block_with_button {
+		text-align: center;
+		.gradient_line {
+		  margin: 0 30px 20px;
+		  width: 70%;
+		  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(222,223,222,1) 50%,rgba(255,255,255,0) 100%);
+		}
+	  }
+	}
+  }
+  .mobile_posts {
+	margin-top: 40px;
+  }
+  .table_wrapper {
+	overflow: auto;
+	table {
+	  width: 800px !important;
+	}
+  }
+  .hide_on_mobile {
+	display: none !important;
+  }
+  .wydruk_blog {
+	padding: 30px 0;
+	text-align: center;
+	img {
+	  margin-right: -40px;
+	}
+	.col-6 {
+	  flex: 0 0 100%;
+	  max-width: 100%;
+	}
+  }
+  .blog_post {
+	margin-bottom: 40px;
+  }
+  .header_stratasys_landing {
+	display: block;
+	padding: 60px 0 40px;
+	margin-bottom: 40px;
+	.background_parallax {
+	  display: none;
+	}
+	.row {
+	  flex-direction: column;
+	  .col-5 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	  }
+	}
+	.header-content {
+	  margin-top: 20px;
+	  &_title {
+		font-size: 2.6rem;
+		line-height: 1.2;
+		img {
+		  display: none;
+		}
+	  }
+	  &_undertitle {
+		font-size: 2.2rem;
+		line-height: 1.2;
+		margin-bottom: 40px;
+	  }
+	}
+	.stratasys_landing_form {
+	  .title {
+		font-size: 2.6rem;
+		line-height: 1.2;
+		text-align: left;
+	  }
+	  form {
+		width: 100%;
+		align-items: center;
+		.form_field {
+		  width: 100%;
+		  .wpcf7-form-control-wrap {
+			width: 100%;
+			input {
+			  width: 100%;
+			}
+		  }
+		}
+		.checkbox_sect, .recaptcha {
+		  width: 100%;
+		}
+		button {
+		  padding: .8rem 6rem;
+		  font-family: 'TitilliumWeb Light';
+		}
+	  }
+	}
+  }
+  .dlaczego_stratasys {
+	padding: 30px 0;
+	.title {
+	  .animate-h1-line-from-right {
+		right: 80px;
+	  }
+	}
+	.row {
+	  flex-direction: column;
+	  .col-4, .col-8 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	  }
+	}
+	img {
+	  margin-bottom: 40px;
+	}
+	.col-8 {
+	  font-size: 2.2rem;
+	  line-height: 1.2;
+	}
+  }
+  .video.stratasys_land {
+	padding: 20px 0;
+	text-align: left;
+	.title {
+	  margin-bottom: 20px;
+	  h1 {
+		text-align: left;
+	  }
+	}
+	iframe {
+	  height: 200px;
+	}
+  }
+  .tworca_technologii_druku {
+	padding: 30px 0;
+	.undertitle {
+	  text-align: left;
+	  margin-top: 30px;
+	}
+	.row {
+	  flex-direction: column;
+	  .col-5, .col-7 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	  }
+	}
+	img {
+	  margin-bottom: 30px;
+	}
+  }
+  .zaawansowane {
+	padding: 30px 0;
+	.title {
+	  h1 {
+		text-align: left;
+	  }
+	}
+	.undertitle {
+	  text-align: left;
+	}
+  }
+  .galeria_wydrukow {
+	padding: 20px 0;
+	&_slider_nav {
+	  display: none;
+	}
+  }
+  .porozmowiaj {
+	padding: 0 0 40px;
+  }
+  .salon_3d {
+	&__hero {
+	  padding: 30px 0;
+	  .title, p {
+		padding: 0 !important;
+	  }
+	  .title {
+		margin-bottom: 20px;
+	  }
+	  .container {
+		>p {
+		  font-size: 2.2rem;
+		  line-height: 1.2;
+		}
+	  }
+	}
+	.visit_us {
+	  .row {
+		padding: 0;
+	  }
+	  img {
+		margin-bottom: 20px;
+	  }
+	  &__text {
+		padding-left: 15px;
+		text-align: center;
+	  }
+	}
+  }
+  .materials_catalog_header {
+	flex-direction: column;
+	height: auto;
+	padding-bottom: 30px;
+	.background_parallax {
+	  position: static;
+	  height: 200px !important;
+	  width: 100%;
+	  margin-top: 60px;
+	  background-position: center top;
+	  -webkit-background-size: cover;
+	  background-size: cover;
+	  transform: none !important;
+	}
+	.row {
+	  flex-direction: column;
+	  .col-8, .col-7 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	  }
+	}
+	.header-content {
+	  &_title {
+		font-size: 2.4rem;
+		text-align: left;
+		letter-spacing: 3px;
+		margin-top: -75px;
+		margin-bottom: 20px;
+		padding-bottom: 0;
+		br, .animate-h1-line-from-left {
+		  display: none !important;
+		}
+	  }
+	  &_undertitle {
+		font-size: 2.4rem;
+		text-align: left;
+		letter-spacing: 0;
+		line-height: 1.2;
+	  }
+	}
+  }
+  .technologie_materials {
+	padding: 30px 0;
+	.title {
+	  h1 {
+		.animate-h1-line-from-right {
+		  right: 80px;
+		}
+	  }
+	}
+	.col {
+	  flex: 0 0 100%;
+	  max-width: 100%;
+	  margin-top: 30px;
+	  .item_icon {
+		margin: 15px auto;
+	  }
+	}
+  }
+  .przewodnik {
+	padding: 30px 0;
+	text-align: left;
+	.row {
+	  flex-direction: column;
+	  .col-5, .col-7 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	  }
+	}
+	.col-7 {
+	  text-align: center;
+	}
+	img {
+	  margin-bottom: 30px !important;
+	}
+	.title {
+	  font-size: 2.6rem;
+	  text-align: left;
+	  margin-bottom: 15px;
+	}
+	.text {
+	  text-align: left;
+	  font-size: 2.2rem;
+	  line-height: 1.2;
+	}
+  }
+  .catalog_header {
+	margin-top: 30px;
+	padding: 30px 0;
+	.row {
+	  flex-direction: column;
+	  .col-6 {
+		flex: 0 0 100%;
+		max-width: 100%;
+		&:last-child {
+		  order: 0;
+		  margin: 30px 0;
+		  img {
+			position: static;
+			width: 100%;
+			height: auto;
+			padding: 0 40px;
+		  }
+		}
+		&:first-child {
+		  order: 1;
+		}
+	  }
+	}
+	.header-content {
+	  text-align: center;
+	  &_title {
+		font-size: 2.6rem;
+		text-align: left;
+	  }
+	  &_undertitle {
+		font-size: 2.4rem;
+		line-height: 1.2;
+		text-align: left;
+	  }
+	  &_button {
+		margin-top: 30px;
+	  }
+	}
+  }
+  section.catalog {
+	padding: 30px 0;
+	.filter {
+	  margin-bottom: 20px;
+	}
+	.row {
+	  flex-direction: column;
+	  text-align: center;
+	  .filtr {
+		display: block;
+		margin-bottom: 30px;
+	  }
+	  .customed-select-wrapper {
+		width: 100%;
+		margin: 0 0 30px;
+	  }
+	}
+  }
+  .stratasys_catalog {
+	.undertitle {
+	  text-align: left;
+	}
+  }
+  .printers {
+	.row {
+	  flex-direction: column;
+	  .col-4 {
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin: 0 0 20px;
+		padding: 0 15px;
+	  }
+	}
+	img {
+	  max-width: 100%;
+	}
+  }
+  .software_template_header {
+	flex-direction: column;
+	height: auto;
+	padding-bottom: 30px;
+	.background_parallax {
+	  position: static;
+	  height: 250px !important;
+	  width: 100%;
+	  margin-top: 60px;
+	  background-position: center top;
+	  -webkit-background-size: cover;
+	  background-size: cover;
+	  transform: none !important;
+	}
+	.row {
+	  flex-direction: column;
+	  .col-8, .col-7 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	  }
+	}
+	.header-content {
+	  text-align: center;
+	  &_title {
+		font-size: 3.2rem;
+		text-align: left;
+		letter-spacing: 3px;
+		margin-top: 50px;
+		margin-bottom: 10px;
+		padding-bottom: 0;
+		br {
+		  display: none !important;
+		}
+	  }
+	  &_undertitle {
+		font-size: 2.8rem;
+		text-align: left;
+		letter-spacing: 0;
+		line-height: 1.2;
+	  }
+	  &_button {
+		margin-top: 60px;
+	  }
+	}
+  }
+  .parameters_software_template {
+	padding: 30px 0;
+	.undertitle {
+	  font-size: 2.2rem;
+	  line-height: 1.2;
+	  text-align: left;
+	}
+	.content-margin {
+	  .row {
+		flex-direction: column;
+		.col-6 {
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		}
+	  }
+	  img {
+		margin-bottom: 20px;
+	  }
+	  .red-line-el, .gray-line-el {
+		display: none;
+	  }
+	  ul {
+		li {
+		  padding-left: 0;
+		}
+	  }
+	  .title {
+		font-size: 2.6rem;
+		letter-spacing: 1px;
+		text-align: center;
+	  }
+	  .content {
+		font-size: 2.2rem;
+		line-height: 1.2;
+		text-align: left;
+	  }
+	}
+  }
+  .optymalizacja {
+	padding: 20px 0;
+	.row {
+	  flex-direction: column;
+	  .col-6, .col-5 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	  }
+	  .col-5 {
+		order: 1;
+	  }
+	  .col-6 {
+		order: 0;
+	  }
+	}
+	img {
+	  margin-bottom: 20px;
+	}
+	.red-line-el, .gray-line-el {
+	  display: none;
+	}
+	ul {
+	  li {
+		padding-left: 0;
+	  }
+	}
+	.title {
+	  font-size: 2.6rem;
+	  letter-spacing: 1px;
+	  text-align: center;
+	}
+	.text {
+	  font-size: 2.2rem;
+	  line-height: 1.2;
+	  text-align: left;
+	}
+  }
+  .big_printer_module {
+	padding: 30px 0 0;
+  }
+  .product_line_formlabs .product_line_slider {
+	padding-top: 4rem;
+	height: auto;
+	.swiper-wrapper {
+	  .swiper-slide {
+		height: auto;
+		img {
+		  max-width: 80%;
+		  height: auto;
+		}
+	  }
+	}
+  }
+  .header_form_2 {
+	flex-direction: column;
+	height: auto;
+	padding-bottom: 30px;
+	padding-top: 0;
+	background-image: url(../img/form2_background_mobile.jpg);
+	background-repeat: no-repeat;
+	background-position: center 60px;
+	background-color: #fff;
+	.header_form_2_printer {
+	  order: 0;
+	  position: static;
+	  width: 45%;
+	  margin: 75px 0 20px 20px;
+	}
+	.container {
+	  order: 1;
+	}
+	.background_parallax {
+	  display: none;
+	}
+	.row {
+	  flex-direction: column;
+	  .col-6 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	  }
+	}
+	.header-content {
+	  text-align: center;
+	  padding-bottom: 60px;
+	  &_title {
+		span {
+		  display: none;
+		}
+	  }
+	  &_undertitle {
+		font-size: 2.6rem;
+		letter-spacing: 1px;
+		line-height: 1.2;
+		text-align: left;
+	  }
+	  &_button {
+		margin-top: 60px;
+		padding: 1rem 7rem;
+		font-family: 'TitilliumWeb Light' !important;
+	  }
+	}
+	.angle {
+	  display: none;
+	}
+  }
+  .opis_form2 {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 0;
+	.container {
+	  order: 0;
+	}
+	.row {
+	  flex-direction: column;
+	  .col-6 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	  }
+	}
+	.drukarka3d-abs {
+	  position: static;
+	  height: auto;
+	  max-width: 100%;
+	  order: 1;
+	}
+	.opis-descr {
+	  padding-left: 0;
+	  .title {
+		font-size: 2.6rem;
+		line-height: 1.2;
+		margin-bottom: 20px;
+	  }
+	  .text {
+		margin-bottom: 30px;
+	  }
+	}
+  }
+  .video {
+	padding: 40px 0;
+	iframe {
+	  height: 200px;
+	}
+  }
+  .parameters_form2 {
+	padding: 20px 0;
+	.row {
+	  flex-direction: column;
+	  .col-6, .col-5 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	  }
+	}
+	ul {
+	  li {
+		padding-right: 0;
+		text-align: left;
+		margin-bottom: 30px;
+		.title {
+		  font-size: 2.6rem;
+		  line-height: 1.2;
+		  margin-bottom: 20px;
+		  text-align: center;
+		}
+		.content {
+		  text-align: left;
+		}
+		.gray-line-el, .red-line-el {
+		  display: none;
+		}
+	  }
+	}
+	.printer_image {
+	  margin-top: 40px;
+	  img {
+		max-width: 70%;
+		margin: 0 auto;
+	  }
+	}
+  }
+  .dodatkowe_cechy {
+	padding: 20px 0;
+	.row {
+	  flex-direction: column;
+	  .col-4 {
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 20px;
+	  }
+	}
+	.item_icon {
+	  height: auto;
+	  margin: 30px 0 15px;
+	}
+  }
+  .materiały_do_druku_3d_form2 {
+	padding-bottom: 20px;
+	&_tabs {
+	  .row {
+		flex-direction: column;
+		.col {
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		  margin-bottom: 20px;
+		  .tablinks {
+			.name {
+			  border: 0 !important;
+			  background-color: #efefef;
+			  padding: 10px 0;
+			  font-size: 2.4rem;
+			  font-family: 'TitilliumWeb SemiBold';
+			  background-image: url(../img/arrow_tabs_slider.png);
+			  background-repeat: no-repeat;
+			  background-position: 92% center;
+			  background-size: 22px auto;
+			}
+		  }
+		}
+	  }
+	}
+	.tabcontent {
+	  padding: 20px;
+	  &:before, &:after {
+		display: none;
+	  }
+	  .row {
+		flex-direction: column;
+		.col-4, .col-7 {
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		  margin-bottom: 20px;
+		}
+	  }
+	}
+  }
+  .form_2_block_with_comp {
+	height: auto;
+	padding-top: 0;
+	&_title {
+	  font-size: 2.6rem;
+	  line-height: 1.2;
+	}
+	.background {
+	  top: 150px;
+	  bottom: auto;
+	  height: 300px;
+	}
+	&_center_words {
+	  margin-top: -10px;
+	  .screen_content {
+		font-size: 2.4rem;
+		line-height: 1.2;
+		margin-bottom: 50px;
+	  }
+	}
+	&_center_icons {
+	  max-width: 100%;
+	  justify-content: space-between;
+	  flex-direction: column;
+	  text-align: left;
+	  align-self: flex-start;
+	  padding-top: 20px;
+	  .icon_link {
+		margin-left: 0;
+		margin-bottom: 40px !important;
+	  }
+	}
+  }
+  main {
+	.row {
+	  flex-direction: column;
+	  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col {
+		flex: 0 0 100%;
+		max-width: 100%;
+	  }
+	}
+  }
+  .testimonials {
+	padding: 20px 0;
+	.col-4 {
+	  margin-bottom: 20px;
+	}
+  }
+  .product_line_formlabs {
+	padding-top: 0;
+  }
+  .bottom-nav {
+	display: none;
+  }
+  .specyfikacja {
+	padding-top: 30px;
+	.red-button {
+	  margin-top: 40px;
+	}
+  }
+  .header_einscan {
+	background-image: url(../img/einscan_header_mobile.jpg);
+	flex-direction: column;
+	height: auto;
+	padding-bottom: 30px;
+	padding-top: 0;
+	background-repeat: no-repeat;
+	background-position: center 60px;
+	background-color: #fff;
+	.background_einscan_header, .angle, .header_form_2_printer {
+	  display: none;
+	}
+
+	.header-content {
+	  text-align: center;
+	  margin-top: 310px;
+	  img {
+		width: 160px;
+		margin-bottom: 10px;
+	  }
+	  &_title {
+		font-size: 2.7rem;
+		text-align: left;
+		.animate-h1-line-from-left {
+		  width: 45%;
+		}
+	  }
+	  &_undertitle {
+		font-size: 2.8rem;
+		letter-spacing: 1px;
+		line-height: 1.2;
+		text-align: left;
+	  }
+	  &_button {
+		margin-top: 60px;
+		padding: 1rem 7rem;
+		font-family: 'TitilliumWeb Light' !important;
+	  }
+	}
+
+	.row {
+	  flex-direction: column;
+	  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col {
+		flex: 0 0 100%;
+		max-width: 100%;
+	  }
+	}
+  }
+  .opis_einscan {
+	padding: 20px 0;
+	.content-margin {
+	  margin-top: 3rem;
+	}
+	.row {
+	  .col-7 {
+		order: 0;
+	  }
+	  .col-5 {
+		order: 1;
+	  }
+	  img {
+		max-width: 50% !important;
+		margin: 30px auto;
+	  }
+	}
+	.opis-descr {
+	  padding-left: 0;
+	  .options ul li {
+		font-size: 2.6rem;
+		letter-spacing: 1px;
+		margin-bottom: 30px;
+		span {
+		  font-size: 2.6rem;
+		}
+	  }
+	}
+	.text {
+	  font-size: 2.2rem;
+	  line-height: 1.2;
+	  text-align: left;
+	}
+  }
+  .parameters_einscan_pro {
+	padding: 30px 0;
+	ul {
+	  li {
+		padding-right: 0;
+		text-align: left;
+		margin-bottom: 30px;
+		.title {
+		  font-size: 2.6rem;
+		  line-height: 1.2;
+		  margin-bottom: 20px;
+		  text-align: center;
+		}
+		.content {
+		  text-align: left;
+		}
+		.gray-line-el, .red-line-el {
+		  display: none;
+		}
+	  }
+	}
+	.printer_image {
+	  margin-top: 40px;
+	  img {
+		max-width: 70%;
+		margin: 0 auto;
+	  }
+	}
+  }
+  .einscan_options {
+	padding: 20px 0 320px;
+	background-size: auto 260px;
+	background-position: right bottom;
+  }
+  .akcesoria_einscan {
+	padding: 30px 0;
+	.title {
+	  padding: 0 60px;
+	}
+	.item_icon {
+	  height: auto;
+	  margin: 40px 0 20px;
+	}
+  }
+  .video_einscan {
+	padding-top: 0;
+	padding-bottom: 40px;
+	iframe {
+	  height: 200px;
+	}
+  }
+  .tryby_scanovania_einscan {
+	padding: 50px 0 30px;
+	&_tabs {
+	  .row {
+		flex-direction: column;
+		.col {
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		  margin-bottom: 20px;
+		  .tablinks {
+			.name {
+			  border: 0 !important;
+			  background-color: #efefef;
+			  padding: 10px 0;
+			  font-size: 2.4rem;
+			  font-family: 'TitilliumWeb SemiBold';
+			  background-image: url(../img/arrow_tabs_slider.png);
+			  background-repeat: no-repeat;
+			  background-position: 92% center;
+			  background-size: 22px auto;
+			}
+		  }
+		}
+	  }
+	}
+	.tabcontent {
+	  padding: 20px;
+	  &:before, &:after {
+		display: none;
+	  }
+	  .row {
+		flex-direction: column;
+		.col-4, .col-7 {
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		  margin-bottom: 20px;
+		}
+	  }
+	}
+  }
+  .einscan_block_with_comp {
+	height: auto;
+	padding-top: 0;
+	padding-bottom: 30px;
+	.connex_block_with_comp_title {
+	  font-size: 2.4rem;
+	  line-height: 1.2;
+	  letter-spacing: 0;
+	}
+	.background {
+	  top: 100px;
+	  bottom: auto;
+	  height: 300px;
+	}
+	.red-button {
+	  display: none;
+	}
+	&_center_words {
+	  margin-top: 300px;
+	  font-size: 2.2rem;
+	  line-height: 1.2;
+	}
+  }
+  .einscan_video {
+	padding: 30px 0;
+	.title {
+	  padding: 0 30px;
+	}
+	.videos {
+	  margin-top: 40px;
+	  iframe {
+		width: 100%;
+		height: 200px;
+		margin-bottom: 20px;
+	  }
+	}
+  }
+  .header_wash_cure {
+	height: auto;
+	flex-direction: column;
+	.background_parallax {
+	  position: static;
+	  height: 200px;
+	  transform: none !important;
+	}
+	.row {
+	  flex-direction: column;
+	  .col-4, .col-7 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	  }
+	}
+	.header-content {
+	  img {
+		margin-bottom: 0;
+	  }
+	  &_undertitle {
+		font-size: 2.4rem;
+		margin-bottom: 15px;
+	  }
+	  &_words {
+		display: block;
+		font-size: 2.2rem;
+		line-height: 1.2;
+	  }
+	}
+  }
+  .opis_form_wash {
+	padding: 30px 0;
+	.undertitle {
+	  text-align: left;
+	}
+	.drukarka3d-abs {
+	  max-width: 60%;
+	  margin: 0 auto 40px;
+	  position: static;
+	  display: block;
+	}
+	.opis-descr {
+	  text-align: center;
+	  .options {
+		text-align: left;
+	  }
+	  .text {
+		text-align: left;
+	  }
+	}
+  }
+  .zawartość {
+	padding: 50px 0 !important;
+  }
+  .opis_form_cure {
+	padding: 40px 0;
+	.undertitle {
+	  text-align: left;
+	}
+	.drukarka3d-abs {
+	  max-width: 60%;
+	  margin: 0 auto 40px;
+	  position: static;
+	  display: block;
+	}
+	.opis-descr {
+	  text-align: center;
+	  .options {
+		text-align: left;
+		ul {
+		  li {
+			text-align: left;
+		  }
+		}
+	  }
+	  .text {
+		text-align: left;
+	  }
+	}
+	.row {
+	  .col-6 {
+		&:first-child {
+		  order: 1;
+		}
+		&:last-child {
+		  order: 0;
+		}
+	  }
+	}
+  }
+  .zamow_kompletny_zestaw {
+	height: auto;
+	margin-bottom: 150px;
+	padding-top: 10px;
+	&_content {
+	  text-align: center;
+	  .title {
+		font-size: 2.4rem;
+		text-align: right;
+		margin-bottom: 0;
+	  }
+	  ul {
+		margin-left: 50%;
+		text-align: left;
+		li {
+		  font-size: 2rem;
+		}
+	  }
+	  .red-button {
+		width: auto;
+		transform: translateY(170px);
+		padding: 1.2rem 6rem;
+	  }
+	}
+  }
+  .header_makerbot {
+	height: auto;
+	padding-top: 60px;
+	flex-direction: column;
+	overflow: visible;
+	padding-bottom: 70px;
+	.background_parallax {
+	  top: 60px;
+	  height: 200px;
+	  transform: none !important;
+	}
+	.angle {
+	  height: 200px;
+	  bottom: auto;
+	  top: 60px;
+	}
+	.container {
+	  order: 1;
+	  margin-top: -40px;
+	  .row {
+		flex-direction: column;
+		.col-6 {
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		}
+	  }
+	}
+	.header_makerbot_printer {
+	  position: static;
+	  order: 0;
+	  height: auto;
+	  margin-top: 10px;
+	}
+	.header-content {
+	  text-align: center;
+	  img {
+		margin-bottom: -20px;
+		text-align: left;
+	  }
+	  &_title {
+		font-size: 4rem;
+		text-align: left;
+		span {
+		  margin-left: -5px;
+		}
+	  }
+	  &_undertitle {
+		font-size: 3rem;
+		text-align: left;
+		letter-spacing: 0;
+		line-height: 1.2;
+	  }
+	  &_button {
+		margin-top: 40px;
+	  }
+	}
+  }
+  .opis_replicator {
+	background-color: #efefef;
+	padding: 40px 0;
+	.drukarka3d-abs {
+	  position: static;
+	  height: auto;
+	  width: 100%;
+	}
+	.row {
+	  .col-6 {
+		&:first-child {
+		  order: 1;
+		}
+		&:last-child {
+		  order: 0;
+		}
+	  }
+	}
+	.opis-descr {
+	  padding-left: 0;
+	  .title {
+		font-size: 2.6rem;
+		line-height: 1.2;
+		margin-bottom: 40px;
+	  }
+	  .text {
+		text-align: left;
+		margin-bottom: 30px;
+	  }
+	}
+  }
+  .parameters_replicator {
+	background-color: #efefef;
+	padding: 40px 0;
+	.row {
+	  .col-6 {
+		&:first-child {
+		  order: 1;
+		}
+		&:last-child {
+		  order: 0;
+		}
+	  }
+	}
+	ul {
+	  li {
+		padding-left: 0;
+		margin-bottom: 30px;
+		.title {
+		  text-align: center;
+		  font-size: 2.6rem;
+		  letter-spacing: 1px;
+		}
+		.content {
+		  text-align: left;
+		}
+	  }
+	}
+  }
+  .dodatkowe_cechy {
+	padding: 40px 0;
+	.item_icon {
+	  img {
+		width: 4.5rem;
+	  }
+	}
+  }
+  .materiały_do_druku_3d_makerbot {
+	padding: 40px 0;
+	&_tabs {
+	  .row {
+		flex-direction: column;
+		.col {
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		  margin-bottom: 20px;
+		  .tablinks {
+			.name {
+			  border: 0 !important;
+			  background-color: #efefef;
+			  padding: 10px 0;
+			  font-size: 2.4rem;
+			  font-family: 'TitilliumWeb SemiBold';
+			  background-image: url(../img/arrow_tabs_slider.png);
+			  background-repeat: no-repeat;
+			  background-position: 92% center;
+			  background-size: 22px auto;
+			}
+		  }
+		}
+	  }
+	}
+	.tabcontent {
+	  padding: 20px;
+	  &:before, &:after {
+		display: none !important;
+	  }
+	  .row {
+		flex-direction: column;
+		.col-4, .col-7 {
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		  margin-bottom: 20px;
+		  padding: 0;
+		}
+	  }
+	  .right-content {
+		text-align: center;
+		.text {
+		  text-align: left;
+		  font-size: 2.2rem;
+		  line-height: 1.2;
+		}
+		a.red-button {
+		  margin-top: 40px;
+		}
+	  }
+	}
+	.block_dowolny_mat {
+	  .col-3 {
+		order: 0;
+		img {
+		  height: 240px;
+		  float: right;
+		  margin-right: 50px;
+		}
+	  }
+	  .col-9 {
+		order: 1;
+		.title {
+		  justify-content: flex-start;
+		  width: 40%;
+		  margin: -150px 0 88px 25px;
+		  line-height: 1.2;
+		}
+		.text {
+		  font-size: 2.2rem;
+		  line-height: 1.2;
+		  strong {
+			font-size: 2.2rem;
+		  }
+		}
+	  }
+	  .angle {
+		width: 100%;
+	  }
+	}
+  }
+  .makerbot_block_with_comp {
+	height: auto;
+	padding-top: 0;
+	&_title {
+	  font-size: 2.6rem;
+	  line-height: 1.2;
+	}
+	.background {
+	  top: 115px;
+	  bottom: auto;
+	  height: 315px;
+	}
+	&_center_words {
+	  margin-top: 10px;
+	  .screen_content {
+		font-size: 2.4rem;
+		line-height: 1.2;
+	  }
+	}
+	&_center_icons {
+	  max-width: 100%;
+	  justify-content: space-between;
+	  flex-direction: column;
+	  text-align: left;
+	  align-self: flex-start;
+	  padding-top: 45px;
+	  padding-left: 15px;
+	  .icon_link {
+		margin-left: 0;
+		margin-bottom: 40px !important;
+	  }
+	}
+  }
+  .parameters_replicator {
+	.red-line-el, .gray-line-el {
+	  display: none !important;
+	}
+  }
+  .header_services {
+	height: auto;
+	padding-top: 60px;
+	flex-direction: column;
+	overflow: visible;
+	padding-bottom: 40px;
+	.background_parallax {
+	  top: 60px;
+	  height: 200px;
+	  transform: none !important;
+	}
+	.angle {
+	  height: 200px;
+	  bottom: auto;
+	  top: 60px;
+	}
+	.container {
+	  order: 1;
+	  margin-top: -40px;
+	  .row {
+		flex-direction: column;
+		.col-7 {
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		}
+	  }
+	}
+	.header_form_2_printer {
+	  position: absolute;
+	  height: auto;
+	  right: 20px;
+	  top: 91px;
+	}
+	.header-content {
+	  text-align: center;
+	  &_title {
+		font-size: 3rem;
+		text-align: left;
+		line-height: 1.2;
+		margin-top: 190px;
+		br {
+		  display: none;
+		}
+	  }
+	  &_undertitle {
+		font-size: 2.2rem;
+		text-align: left;
+		letter-spacing: 0;
+		line-height: 1.2;
+		strong {
+		  font-size: 2.2rem;
+		}
+	  }
+	  &_button {
+		display: none;
+	  }
+	}
+  }
+  .services_contact {
+	padding-top: 0;
+	.container {
+	  .row {
+		flex-direction: column;
+		.col-7, .col-5 {
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		}
+		.col-5 {
+		  order: 0;
+		}
+		.col-7 {
+		  order: 1;
+		}
+	  }
+	}
+	.skontaktuj {
+	  max-width: 100%;
+	  .contacts_block {
+		margin-top: 40px;
+		flex-direction: column;
+		.email, .phone {
+		  width: 100%;
+		  margin-bottom: 40px;
+		}
+	  }
+	  .text {
+		margin-top: 0;
+		text-align: left;
+		margin-bottom: 40px;
+	  }
+	}
+	.services_form {
+	  &_title {
+		text-align: left;
+		font-size: 2.6rem;
+	  }
+	  form {
+		margin-top: 30px;
+		.form_field {
+		  width: 100%;
+		  .wpcf7-form-control-wrap {
+			width: 100%;
+			input, textarea {
+			  width: 100%;
+			}
+		  }
+		}
+	  }
+	}
+	.accordion.services {
+	  li {
+		a {
+		  width: 100%;
+		  font-size: 2.2rem;
+		  &:before, &:after {
+			right: 10px;
+		  }
+		}
+		.accord_content {
+		  text-align: left;
+		  ul {
+			margin-left: 20px;
+		  }
+		}
+	  }
+	}
+  }
+  .uslugi_druku {
+	padding: 40px 0;
+	.undertitle {
+	  text-align: left;
+	}
+	.uslugi_tabs {
+	  .row {
+		text-align: center;
+	  }
+	  .item_tab {
+		margin: 0 15px 30px;
+		width: 100%;
+		.usluga {
+		  width: 100%;
+		  height: auto;
+		}
+	  }
+	}
+	.hide_content_section {
+	  .tabcontent_usluga {
+		padding-top: 40px;
+		.image_text {
+		  flex-direction: column;
+		  padding: 0 15px;
+		  text-align: left;
+		  img {
+			width: 100%;
+			height: auto;
+		  }
+		  .text {
+			text-align: left;
+			margin-top: 30px;
+		  }
+		}
+		ul {
+		  padding: 0 15px;
+		  li {
+			.text {
+			  text-align: left;
+			}
+		  }
+		}
+	  }
+	}
+  }
+  .services_technologia {
+	padding: 40px 15px;
+	.technologia_table {
+	  width: 100%;
+	  .technologia_item_tab {
+		height: auto !important;
+		margin-bottom: 15px;
+		.icon_block {
+		  width: 100% !important;
+		  height: auto !important;
+		  flex-direction: row-reverse !important;
+		  justify-content: flex-end !important;
+		  padding: 15px;
+		  font-family: 'TitilliumWeb SemiBold';
+		  img {
+			width: 50px !important;
+			margin-top: 0 !important;
+			order: 0;
+			margin-right: 25px;
+		  }
+		}
+		.descr_block {
+		  display: none;
+		}
+		.arrow {
+		  top: 50% !important;
+		  margin-top: -14px;
+		}
+	  }
+	  .technologia_tabs_open {
+		position: static;
+		width: 100%;
+		.technolohia_tab_open {
+		  padding: 40px 20px 20px;
+		  .title {
+			text-align: left;
+			font-size: 2.4rem;
+		  }
+		  .technolohia_tab_open_tabs, .tabcontent {
+			display: none !important;
+		  }
+		}
+	  }
+	}
+  }
+  .recomendations {
+	height: auto;
+	padding: 30px 0;
+	img {
+	  position: static;
+	}
+	.row {
+	  height: auto;
+	  margin-top: -160px;
+	  .recom_slider {
+		.swiper-wrapper {
+		  min-height: 1px;
+		  height: auto;
+		  .swiper-slide {
+			padding: 20px 15px;
+			height: auto;
+			.text {
+			  font-size: 2.2rem;
+			  line-height: 1.2;
+			  margin-bottom: 20px;
+			}
+			.author {
+			  position: static;
+			  text-align: center;
+			  font-size: 2.4rem;
+			}
+		  }
+		}
+		.swiper-button-next, .swiper-button-prev {
+		  top: auto;
+		  bottom: 30px;
+		}
+	  }
+	}
+  }
+  .skorzystaj {
+	padding: 30px 15px;
+	text-align: left;
+	.text {
+	  text-align: left;
+	  font-size: 2.2rem;
+	  line-height: 1.2;
+	}
+	.content-margin {
+	  margin-top: 15px;
+	}
+	.skorzystaj_slider {
+	  img {
+		display: block;
+		margin: 0 auto;
+	  }
+	}
+  }
+  .header_stratasys_connex {
+	background-image: url(../img/connex_mobile_header.jpg);
+	background-repeat: no-repeat;
+	background-position: center 60px;
+	height: auto;
+	padding: 80px 0 40px;
+	flex-direction: column;
+	.background_parallax, .angle {
+	  display: none;
+	}
+	.container {
+	  order: 1;
+	  .row {
+		flex-direction: column;
+		.col-5 {
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		}
+	  }
+	}
+	.header_stratasys_connex_printer {
+	  position: static;
+	  order: 0;
+	  width: 70%;
+	  display: block;
+	  margin: 0 auto 30px;
+	}
+  	.header-content {
+	  text-align: center;
+	  &_title {
+		font-size: 3.6rem;
+		text-align: left;
+	  }
+	  &_undertitle {
+		font-size: 2.6rem;
+		text-align: left;
+	  }
+	  &_button {
+		margin-top: 40px;
+	  }
+	}
+  }
+  .opis_stratasys_connex {
+	padding: 50px 0;
+	.title {
+	  padding: 0 20px;
+	}
+	.content-margin {
+	  img {
+		max-width: 80%;
+		margin: 0 auto 30px;
+		display: block;
+	  }
+	}
+	.opis-descr {
+	  padding-left: 0;
+	}
+	.text {
+	  margin-top: -20px;
+	  text-align: left;
+	  font-size: 2.2rem;
+	  line-height: 1.2;
+	}
+  }
+  .parameters_connex {
+	padding: 40px 0;
+	ul {
+	  li {
+		padding-right: 0;
+		margin-bottom: 40px;
+		.title {
+		  text-align: center;
+		  font-size: 2.4rem;
+		  letter-spacing: 0;
+		}
+		.content {
+		  text-align: left;
+		  font-size: 2.2rem;
+		  line-height: 1.2;
+		}
+		.red-line-el, .gray-line-el {
+		  display: none !important;
+		}
+	  }
+	}
+	.printer_image {
+	  img {
+		max-width: 80%;
+		margin: 30px auto 0;
+		display: block;
+	  }
+	}
+  }
+  .zalety_connex {
+	padding: 40px 0;
+	.title {
+	  padding: 0 20px;
+	}
+	ul {
+	  margin: 30px 0 30px 20px;
+	  li {
+		font-size: 2.2rem;
+		line-height: 1.2;
+		div {
+		  margin-left: 0;
+		}
+	  }
+	}
+  }
+  .materiały_connex {
+	padding: 50px 0;
+	&_tabs {
+	  margin-top: 3rem;
+	  .row {
+		flex-direction: column;
+		.col {
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		  margin-bottom: 20px;
+		  .tablinks {
+			.name {
+			  border: 0 !important;
+			  background-color: #efefef;
+			  padding: 10px 0;
+			  font-size: 2.4rem;
+			  font-family: 'TitilliumWeb SemiBold';
+			  background-image: url(../img/arrow_tabs_slider.png);
+			  background-repeat: no-repeat;
+			  background-position: 92% center;
+			  background-size: 22px auto;
+			}
+		  }
+		}
+	  }
+	}
+	.tabcontent {
+	  padding: 20px;
+	  &:before, &:after {
+		display: none;
+	  }
+	  .row {
+		flex-direction: column;
+		.col-4, .col-7 {
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		  margin-bottom: 20px;
+		}
+	  }
+	  .left-content {
+		a {
+		  margin-top: 40px;
+		  margin-bottom: 30px;
+		}
+	  }
+	  .right-content {
+		.text {
+		  text-align: left;
+		}
+	  }
+	}
+
+	.block_dowolny_mat {
+	  .col-3 {
+		order: 0;
+		img {
+		  height: 240px;
+		  float: right;
+		  margin-right: 50px;
+		}
+	  }
+	  .col-8 {
+		order: 1;
+		.title {
+		  justify-content: flex-start;
+		  width: 39%;
+		  margin: -150px 0 88px 0;
+		  line-height: 1.2;
+		  font-size: 2.2rem;
+		  span {
+			font-size: 2.2rem;
+		  }
+		}
+		.text {
+		  font-size: 2.2rem;
+		  line-height: 1.2;
+		  strong {
+			font-size: 2.2rem;
+		  }
+		}
+	  }
+	  .angle {
+		width: 100%;
+	  }
+	  a {
+		text-align: center;
+		margin-top: 20px;
+	  }
+	}
+  }
+  .connex_block_with_comp {
+	&_title {
+	  text-align: center;
+	  font-size: 2.6rem;
+	  letter-spacing: 0;
+	  margin-bottom: 28rem;
+	  strong {
+		font-size: 2.6rem;
+		display: block;
+	  }
+	  br {
+		display: none;
+	  }
+	}
+	&_center {
+	  &_words {
+		text-align: left;
+		font-size: 2.2rem;
+		line-height: 1.2;
+	  }
+	}
+	.background {
+	  height: auto;
+	  bottom: auto;
+	  top: 125px;
+	}
+  }
+  .header_stratasys {
+	background-image: url(../img/f123_mobile_header.jpg);
+	background-repeat: no-repeat;
+	background-position: center 60px;
+	height: auto;
+	padding: 80px 0 40px;
+	flex-direction: column;
+	.background_parallax, .angle {
+	  display: none;
+	}
+	.container {
+	  order: 1;
+	  .row {
+		flex-direction: column;
+		.col-6 {
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		}
+	  }
+	}
+	.header2_stratasys_printer {
+	  position: static;
+	  order: 0;
+	  width: 45%;
+	  display: block;
+	  margin: 0 auto 30px;
+	}
+	.header-content {
+	  text-align: center;
+	  &_title {
+		font-size: 3.6rem;
+		text-align: left;
+	  }
+	  &_undertitle {
+		font-size: 2.6rem;
+		text-align: left;
+		letter-spacing: 0;
+		br {
+		  display: none;
+		}
+	  }
+	  &_button {
+		margin-top: 40px;
+	  }
+	}
+  }
+  .stratasys_table_sect {
+	background-color: #efefef;
+	padding: 50px 0;
+	.left_printer_profile {
+	  display: none;
+	}
+	.col-9 {
+	  .title {
+		text-align: left;
+		margin: 0 0 20px;
+		font-size: 3rem;
+	  }
+	  .text {
+		font-size: 2.2rem;
+		line-height: 1.2;
+		text-align: left;
+	  }
+	}
+	.custom_table {
+	  padding-left: 0;
+	  overflow: auto;
+	  &_row {
+		width: 700px;
+	  }
+	}
+  }
+  .stratasys_slider_section {
+	padding-top: 0;
+	background-color: #efefef;
+	.stratasys_slider {
+	  height: auto;
+	  padding-bottom: 50px;
+	  .swiper-slide {
+		height: 200px;
+		padding-top: 10px;
+		.angle {
+		  display: none;
+		}
+		h1, h2 {
+		  font-size: 2.2rem;
+		  line-height: 1.2;
+		  color: #fff;
+		}
+		h1 {
+		  margin-bottom: 30px;
+		}
+	  }
+	  .swiper_nav_container {
+		.swiper-button-next {
+		  left: auto;
+		  right: 10px;
+		  top: auto;
+		  bottom: 5px;
+		  transform: scale(.7);
+		  width: 2.9rem;
+		}
+		.swiper-button-prev {
+		  left: 10px;
+		  top: auto;
+		  bottom: 5px;
+		  transform: scale(.7);
+		  width: 2.9rem;
+		  margin-left: 0;
+		}
+	  }
+	}
+  }
+  .stratasys_video {
+	padding: 30px 0;
+	.undertitle, .stratasys_video_text {
+	  font-size: 2.2rem;
+	  line-height: 1.2;
+	}
+	.videos {
+	  flex-direction: column;
+	  iframe {
+		width: 100%;
+		height: 200px;
+	  }
+	}
+	ul {
+	  margin-left: 20px;
+	}
+  }
+  .materiały_do_druku_3d_stratasys {
+	padding: 30px 0;
+	&_tabs {
+	  .row {
+		flex-direction: column;
+		.col {
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		  margin-bottom: 20px;
+		  .tablinks {
+			.name {
+			  border: 0 !important;
+			  background-color: #efefef;
+			  padding: 10px 0;
+			  font-size: 2.4rem;
+			  font-family: 'TitilliumWeb SemiBold';
+			  background-image: url(../img/arrow_tabs_slider.png);
+			  background-repeat: no-repeat;
+			  background-position: 92% center;
+			  background-size: 22px auto;
+			}
+		  }
+		}
+	  }
+	}
+	.tabcontent {
+	  padding: 20px;
+	  &:before, &:after {
+		display: none;
+	  }
+	  .row {
+		flex-direction: column;
+		.col-4, .col-7 {
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		  margin-bottom: 20px;
+		}
+	  }
+	}
+	.tabs_horizontal {
+	  .right-content {
+		.text {
+		  text-align: left !important;
+		}
+	  }
+	}
+  }
+  .stratasys_block_with_comp {
+	height: auto;
+	padding-top: 0;
+	&_title {
+	  font-size: 2.6rem;
+	  line-height: 1.2;
+	}
+	.background {
+	  top: 150px;
+	  bottom: auto;
+	  height: 320px;
+	  .screen_content {
+		width: auto;
+		height: 100%;
+	  }
+	}
+	&_center_words {
+	  margin-top: -10px;
+	  .screen_content {
+		font-size: 2.4rem;
+		line-height: 1.2;
+		margin-bottom: 50px;
+	  }
+	}
+	&_center_icons {
+	  max-width: 100%;
+	  justify-content: space-between;
+	  flex-direction: column;
+	  text-align: left;
+	  align-self: flex-start;
+	  padding-top: 20px;
+	  .icon_link {
+		margin-left: 0;
+		margin-bottom: 40px !important;
+	  }
+	}
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .mobile_posts, .mobile_image, .rozwiazania.mobile_ver {
+	display: none;
+  }
+}

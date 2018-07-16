@@ -1,0 +1,254 @@
+.about {
+  padding: 0 !important;
+
+  &__article {
+	text-align: center;
+	&_text {
+	  text-align: left;
+	  padding: 0 115px;
+	  margin-bottom: 70px;
+	}
+	.container {
+	  padding: 0 175px;
+	  > img {
+		display: block;
+		margin: 70px auto;
+	  }
+	  > p {
+		margin-bottom: 70px;
+	  }
+	}
+	p {
+	  font-size: 2.2rem;
+	}
+  }
+  &__partner {
+	background-color: #efefef;
+	padding: 70px 0;
+	.container {
+	  padding: 0 220px;
+	}
+	p {
+	  font-size: 2.2rem;
+	  line-height: 1.2;
+	}
+	&_logos {
+	  display: flex;
+	  justify-content: space-between;
+	  margin-bottom: 70px;
+	  img {
+		display: block;
+	  }
+	  .item {
+		margin-top: 50px;
+		&:last-child {
+		  margin-top: 0;
+		  width: 40%;
+		  img {
+			display: block;
+			margin: 0 auto;
+		  }
+		}
+		span {
+		  letter-spacing: 6px;
+		  margin-left: 140px;
+		}
+		.animate-h1-line-vertical {
+		  background-color: #d7d7d7;
+		  top: -120px;
+		  right: -20px;
+		}
+	  }
+	}
+  }
+  &__description {
+	padding: 70px 0 !important;
+	.title {
+	  margin-bottom: 70px;
+	}
+	.image {
+	  img {
+		max-width: 100%;
+		height: auto;
+	  }
+	}
+	.tabs {
+	  padding-top: 80px;
+	  padding-left: 80px;
+	  ul {
+		list-style: none;
+		li {
+		  border-bottom: 1px solid #e6e6e6;
+		  display: block;
+		  margin-bottom: 8px;
+		  padding-bottom: 5px;
+		  a {
+			font-size: 2.2rem;
+			text-transform: uppercase;
+			cursor: pointer;
+			font-family: "TitilliumWeb Regular";
+			position: relative;
+			i {
+			  position: absolute;
+			  left: -50px;
+			  top: 0;
+			  width: 35px;
+			  height: 16px;
+			  overflow: hidden;
+			  &:before {
+				content: "";
+				position: absolute;
+				top: 100%;
+				left: -1.2rem;
+				width: 3.1rem;
+				height: 0.2rem;
+				background: $red-accent;
+				transform-origin: top right;
+				transform: rotate(315deg);
+			  }
+			  &:after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: -3.2rem;
+				width: 3.1rem;
+				height: 0.2rem;
+				background: $red-accent;
+				transform-origin: bottom right;
+				transform: rotate(45deg);
+			  }
+			  &.draw_nav_arrow {
+				&:before {
+				  top: 0;
+				  left: 1.2rem;
+				  transition: all 0.25s ease-in-out;
+				  transition-delay: 0.25s;
+				}
+				&:after {
+				  top: 95%;
+				  left: -0.9rem;
+				  transition: all 0.25s ease-in-out;
+				}
+			  }
+			}
+		  }
+		  .accord_content {
+			font-size: 2.2rem;
+		  }
+		}
+	  }
+	}
+  }
+  .partners {
+	padding: 0 0 20px !important;
+  }
+  .aktualnosci {
+	padding: 0 0 70px !important;
+	.newsletter {
+	  margin-top: 0;
+	}
+  }
+
+  @include media-breakpoint-down(sm) {
+	&__article {
+	  padding: 20px 0;
+	  .container {
+		padding: 0 15px;
+		>img {
+		  margin: 30px auto 60px;
+		  width: 130px;
+		}
+		>p {
+		  margin-bottom: 30px;
+		}
+	  }
+	  &_text {
+		padding: 0;
+		margin-bottom: 30px;
+	  }
+	}
+	&__partner {
+	  padding: 20px 0 30px;
+	  .container {
+		padding: 0 15px;
+	  }
+	  &_logos {
+		margin-bottom: 30px;
+		.item {
+		  margin-top: 20px;
+		  &:first-child {
+			width: 70%;
+		  }
+		  &:last-child {
+			img {
+			  margin: 0 0 0 50px;
+			}
+		  }
+		  img {
+			max-width: 100%;
+			max-height: 90px;
+		  }
+		  span {
+			letter-spacing: 2px;
+			margin-left: 77px;
+			display: block;
+			font-size: 1.2rem;
+			font-family: 'TitilliumWeb SemiBold';
+		  }
+		  .animate-h1-line-vertical {
+			top: -40px;
+			height: 110px;
+		  }
+		}
+	  }
+	}
+	&__description {
+	  padding: 20px 0 !important;
+	  .title {
+		margin-bottom: 30px;
+	  }
+	  .row {
+		.tabs {
+		  order: 0;
+		  padding-top: 0;
+		  margin-bottom: 30px;
+		  .accord_content {
+			font-size: 2.2rem;
+			line-height: 1.2;
+			margin-bottom: 20px;
+		  }
+		  ul {
+			li {
+			  a {
+				i {
+				  width: 36px;
+				  height: 18px;
+				  transform: scale(.7);
+				  top: 7px;
+				}
+			  }
+			}
+		  }
+		}
+		.image {
+		  order: 1;
+		  margin-bottom: 20px;
+		}
+	  }
+	}
+	.newsletter-mobile {
+	  background-color: #fff;
+	  box-shadow: none;
+	}
+	.aktualnosci {
+	  padding-bottom: 0 !important;
+	}
+	.about__description .tabs ul li a i:after, .about__description .tabs ul li a i:before {
+	  width: 24px;
+	  height: 1px;
+	}
+	.about__description .tabs ul li a i.draw_nav_arrow:before {
+	  left: 1rem;
+	}
+  }
+}

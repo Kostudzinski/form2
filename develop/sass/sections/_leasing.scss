@@ -1,0 +1,163 @@
+.leasing {
+  padding: 0 !important;
+
+  &__article {
+	.animate-h1-line-from-left {
+	  top: 0;
+	  width: 90%;
+	}
+	.animate-h1-line-from-right {
+	  width: 30%;
+	}
+
+	.second_title {
+	  margin-top: 70px;
+	}
+	.second_undertitle {
+	  margin-top: 0;
+	}
+
+	&_list {
+	  text-align: center;
+	  .item {
+		margin-top: 70px;
+		padding: 0 50px;
+		img {
+		  margin-bottom: 30px;
+		}
+		p {
+		  font-size: 2.2rem;
+		}
+	  }
+	}
+  }
+
+  .banner-image {
+	max-width: 100%;
+	height: auto;
+  }
+
+  &_scheme {
+	padding: 50px 0 !important;
+	.title {
+	  margin-bottom: 50px;
+	}
+	&_list {
+	  padding: 0 200px;
+	  .item {
+		min-height: 140px;
+		span {
+		  float: left;
+		  width: 50px;
+		  height: 50px;
+		  padding: 0;
+		  line-height: 50px;
+		  text-align: center;
+		  font-family: "TitilliumWeb Light";
+		  font-size: 2.5rem;
+		  margin-right: 40px;
+		}
+		p {
+		  margin-left: 90px;
+		  font-size: 2.5rem;
+		}
+		&:after {
+		  content: '';
+		  clear: both;
+		  display: table;
+		}
+	  }
+	}
+  }
+
+  &_banner {
+	height: 640px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	padding-top: 60px !important;
+	padding-bottom: 0 !important;
+	p {
+	  margin-left: 33%;
+	  font-size: 3.5rem;
+	  line-height: 1.3;
+	  font-family: "TitilliumWeb Light";
+	  color: #fff;
+	  margin-bottom: 50px;
+	}
+	a {
+	  padding: .7rem 4rem;
+	  float: right;
+	  margin-right: 25%;
+	  color: #fff;
+	  font-family: "TitilliumWeb Light";
+	}
+  }
+}
+
+@include media-breakpoint-down(sm) {
+ .leasing__article {
+   padding: 20px 0;
+   .title {
+	 h1 {
+	   margin: 0 68px;
+	   .animate-h1-line-from-right {
+		 width: 80%;
+	   }
+	 }
+	 &.second_title {
+	   margin-top: 40px;
+	   margin-bottom: 20px;
+	   h1 {
+		 margin: 0;
+	   }
+	 }
+   }
+   .undertitle {
+	 text-align: left;
+	 font-size: 2.2rem;
+   }
+ }
+  .leasing_scheme {
+	padding: 20px 0 !important;
+	.title {
+	  h1 {
+		margin: 0 40px;
+	  }
+	}
+	&_list {
+	  padding: 0;
+	  .item {
+		min-height: 1px;
+		margin-bottom: 20px;
+		span {
+		  margin-right: 10px;
+		  width: 40px;
+		  height: 40px;
+		  line-height: 40px;
+		}
+		p {
+		  margin-left: 60px;
+		  font-size: 2.2rem;
+		  line-height: 1.2;
+		}
+	  }
+	}
+  }
+  .leasing_banner {
+	height: 220px;
+	padding-top: 20px !important;
+	text-align: center;
+	p {
+	  font-size: 2.2rem;
+	  margin: 0 0 60px;
+	  padding-left: 90px;
+	  text-align: left;
+	}
+	a {
+	  float: none;
+	  padding: 1rem 7rem;
+	  margin: 0;
+	}
+  }
+}

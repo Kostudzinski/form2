@@ -1,0 +1,99 @@
+/* Services 3D */
+.services {
+  &_banner {
+	background-image: url(../img/services_banner_image.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	height: 700px;
+	padding: 0 !important;
+	.row, .container {
+	  height: 100%;
+	}
+	.row {
+	  display: block;
+	}
+	&__text {
+	  display: flex;
+	  justify-content: center;
+	  flex-direction: column;
+	  height: 100%;
+	  p {
+		font-size: 3.2rem;
+		color: #fff;
+		margin-bottom: 80px;
+	  }
+	  a {
+		color: #fff;
+		font-family: "TitilliumWeb Light";
+		font-size: 3rem;
+		padding: .5rem 4rem;
+		align-self: flex-start;
+	  }
+	  &:after {
+		content:'';
+		display: table;
+		clear: both;
+	  }
+	}
+  }
+}
+
+.salon_3d {
+  padding: 0 !important;
+  .aktualnosci {
+	background: transparent;
+	box-shadow: none;
+	.newsletter {
+	  margin-top: 0;
+	}
+  }
+
+  &__hero {
+	.title {
+	  margin-bottom: 70px;
+	  h1 {
+		margin-bottom: 10px;
+	  }
+	  p {
+		font-size: 2.3rem;
+	  }
+	}
+	.title, .container > p {
+	  padding: 0 100px;
+	}
+	.container > p {
+	  font-size: 2.3rem;
+	}
+  }
+  .visit_us {
+	background-color: #efefef;
+	padding: 40px 0 !important;
+	.row {
+	  padding: 0 100px;
+	}
+	&__image {
+	  img {
+		max-width: 100%;
+		height: auto;
+	  }
+	}
+	&__text {
+	  padding-left: 80px;
+	  h2 {
+		font-size: 3.5rem;
+		margin-bottom: 30px;
+	  }
+	  p {
+		line-height: 1.2;
+		margin-bottom: 40px;
+		font-size: 2.1rem;
+	  }
+	  a {
+		font-family: "TitilliumWeb Light";
+		font-size: 2.2rem;
+		padding: .5rem 4rem;
+	  }
+	}
+  }
+}

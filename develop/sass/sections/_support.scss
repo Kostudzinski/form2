@@ -1,0 +1,136 @@
+.support {
+  padding: 0 !important;
+  &__title {
+	padding: 30px 0 40px !important;
+	p {
+	  margin-top: 20px;
+	  font-size: 2.7rem;
+	}
+	.title {
+	  .animate-h1-line-from-left {
+		width: 60%;
+	  }
+	}
+  }
+  &__contacts {
+	background-color: #efefef;
+	padding: 20px 0 30px !important;
+	.title {
+	  margin-bottom: 20px;
+	}
+	&_item {
+	  h3 {
+		margin-left: 100px;
+		font-size: 2.8rem;
+		font-family: 'TitilliumWeb Regular';
+		margin-bottom: 25px;
+	  }
+	  .item {
+		margin-left: 40px;
+		margin-bottom: 20px;
+		img {
+		  margin-right: 25px;
+		  display: inline-block;
+		  vertical-align: middle;
+		}
+		a {
+		  font-size: 2.2rem;
+		  display: inline-block;
+		  vertical-align: middle;
+		}
+	  }
+	}
+  }
+  &__article {
+	padding: 60px 0 !important;
+	&_list {
+	  .item {
+		padding: 0 80px;
+		margin-bottom: 70px;
+		display: flex;
+		img {
+		  float: left;
+		  margin-left: 50px;
+		  margin-right: 150px;
+		  align-self: center;
+		}
+		.title {
+		  text-align: left;
+		  h3 {
+			font-size: 2.7rem;
+			padding-bottom: 1rem;
+			margin-bottom: 1.4rem;
+			display: block;
+			.animate-h1-line-from-left {
+			  background: linear-gradient(90deg,#dedfde,rgba(255,255,255,0));
+			}
+		  }
+		  p {
+			font-size: 2.3rem;
+			line-height: 1.2;
+		  }
+		}
+	  }
+	}
+	&_image {
+	  text-align: center;
+	  img {
+		@include transition(0.3s);
+		position: relative;
+		&:hover {
+		  transform: scale(1.2);
+		  z-index: 5;
+		}
+	  }
+	  h4 {
+		font-size: 2.7rem;
+		font-family: 'TitilliumWeb SemiBold';
+		margin-bottom: 50px;
+	  }
+	}
+  }
+  > img {
+	max-width: 100%;
+	height: auto;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .support {
+	&__title {
+	  .title {
+		margin-bottom: 15px;
+	  }
+	  .undertitle {
+		text-align: left;
+	  }
+	  p {
+		font-size: 2.2rem;
+		line-height: 1.2;
+	  }
+	}
+	&__article {
+	  padding: 20px 0;
+	  &_list {
+		.item {
+		  flex-direction: column;
+		  padding: 0;
+		  text-align: center;
+		  margin-bottom: 30px;
+		  img {
+			margin: 20px auto;
+		  }
+		}
+	  }
+	  &_image {
+		margin-bottom: 30px;
+		h4 {
+		  margin-bottom: 20px;
+		}
+		img {
+		  max-width: 100%;
+		}
+	  }
+	}
+  }
+}

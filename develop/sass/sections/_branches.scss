@@ -1,0 +1,133 @@
+.branches {
+  padding: 0 !important;
+  &__article {
+	padding: 70px 0 !important;
+	position: relative;
+	box-shadow: 35px 0 40px -10px rgba(0,0,0,.3);
+	.title {
+	  margin-bottom: 60px;
+	  .animate-h1-line-from-left {
+		width: 30%;
+	  }
+	}
+	p {
+	  padding: 0 20%;
+	}
+  }
+  .rozwiazania {
+	background-color: #fff;
+	padding: 70px 0 0 !important;
+	h1 {
+	  padding-top: 0;
+	}
+	.animate-h1-line-vertical {
+	  left: auto;
+	  right: -30px;
+	  top: 0;
+	}
+	&_tabs {
+	  background-color: #f8f8f8;
+	  .tablinks {
+		.name {
+		  font-size: 2rem;
+		}
+	  }
+	}
+	.tabcontent {
+	  height: 500px;
+	  .angle {
+		height: calc(100% + 1px);
+		bottom: auto;
+		top: 0;
+		width: auto;
+		left: 0;
+	  }
+	  &_undertitle {
+		font-size: 2rem;
+		line-height: 1.2;
+		margin-bottom: 30px;
+	  }
+	  ul {
+		list-style: none;
+		margin-bottom: 40px;
+		li {
+		  margin-bottom: 5px;
+		  &:before {
+			content: '';
+			width: 8px;
+			height: 8px;
+			background-color: #878787;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 30px;
+		  }
+		}
+	  }
+	  a {
+		font-size: 2rem;
+		font-family: 'TitilliumWeb Light';
+	  }
+	}
+	.swiper-button-prev {
+	  transform: scale(.7);
+	  display: none;
+	}
+	.swiper-button-next {
+	  transform: scale(.7);
+	}
+  }
+  .aktualnosci {
+	padding: 0 0 70px !important;
+	.newsletter {
+	  margin-top: 0;
+	}
+  }
+  &__examples {
+	background-color: #efefef;
+	padding: 60px 0 240px !important;
+	background-image: url(../img/branches_examples_image.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	margin-bottom: 70px;
+	text-align: center;
+	.undertitle {
+	  margin-bottom: 70px;
+	}
+  }
+
+  @include media-breakpoint-down(sm) {
+	&__article {
+	  padding: 30px 0 !important;
+	  .title {
+		margin-bottom: 20px;
+	  }
+	  p {
+		padding: 0;
+	  }
+	}
+	&__examples {
+	  background-color: #f5f5f5;
+	  padding: 60px 0 100px!important;
+	  background-size: auto 56%;
+	  margin-bottom: 0;
+	  .title {
+		h1 {
+		  font-size: 2.6rem;
+		}
+	  }
+	  .undertitle {
+		text-align: left;
+		font-size: 2.2rem;
+		line-height: 1.2;
+		margin-bottom: 30px;
+	  }
+	}
+	.aktualnosci {
+	  padding: 0 !important;
+	}
+	.newsletter-mobile {
+	  box-shadow: none;
+	  margin-bottom: 0;
+	}
+  }
+}

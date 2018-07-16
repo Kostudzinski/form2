@@ -1,0 +1,574 @@
+.materials_sls {
+  padding: 0 !important;
+  &__article {
+	padding: 60px 0 !important;
+	.text {
+	  padding-right: 6%;
+	  p {
+		font-size: 2.8rem;
+		line-height: 1.2;
+	  }
+	}
+	.slider {
+	  padding: 0 100px;
+	  .galeria_wydrukow_slider {
+		width: 100%;
+		height: 320px;
+		.swiper-slide {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  .photo {
+			align-self: flex-start;
+			img {
+			  max-width: 100%;
+			  height: auto;
+			}
+		  }
+		}
+	  }
+	  .galeria_wydrukow_slider_nav {
+		a {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  img {
+			max-width: 70%;
+			height: auto;
+		  }
+		}
+	  }
+	  .swiper-button-prev, .swiper-button-next {
+		top: auto;
+		bottom: 0;
+	  }
+	}
+	&_title {
+	  margin-bottom: 70px;
+	  display: flex;
+	  justify-content: space-between;
+	  >* {
+		align-self: center;
+	  }
+	  h3 {
+		font-family: 'TitilliumWeb SemiBold', sans-serif;
+		font-size: 3rem;
+	  }
+	  a {
+		font-size: 1.8rem;
+		@include transition(0.3s);
+		&:hover {
+		  color: $red-accent;
+		}
+	  }
+	}
+  }
+  &__benefits {
+	text-align: center;
+	margin-bottom: 80px;
+	h3 {
+	  font-family: 'TitilliumWeb SemiBold';
+	  font-size: 2rem;
+	  margin-bottom: 60px;
+	}
+	.benefits_item {
+	  img {
+		display: block;
+		margin: 0 auto 30px;
+		max-height: 50px;
+	  }
+	  span {
+		font-family: 'TitilliumWeb SemiBold';
+		margin-bottom: 20px;
+		display: block;
+	  }
+	}
+	.row {
+	  margin-bottom: 60px;
+	}
+	.buttons {
+	  margin-bottom: 80px;
+	  a {
+		width: 225px;
+		margin: 0 110px;
+		padding: 7px 15px;
+		font-family: 'TitilliumWeb Regular';
+		font-size: 1.7rem;
+	  }
+	}
+	.list_item {
+	  text-align: left;
+	  h4 {
+		font-family: 'TitilliumWeb SemiBold';
+		font-size: 1.8rem;
+		margin-bottom: 15px;
+	  }
+	  ul {
+		list-style: none;
+		li {
+		  font-size: 2rem;
+		  margin-left: 28px;
+		  &:before {
+			content: '';
+			width: 8px;
+			height: 8px;
+			background-color: #8b8b8b;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 20px;
+			margin-left: -28px;
+		  }
+		}
+	  }
+	}
+  }
+}
+
+.materials_fdm {
+  padding: 0 !important;
+  position: relative;
+  &__aside {
+	text-align: left;
+	border-right: 1px solid #e6e6e6;
+	padding-top: 60px;
+	padding-right: 0;
+	align-self: flex-start;
+	position: static;
+	&::-webkit-scrollbar {
+	  display: none;
+	}
+	&.fixedPosition {
+	  position: fixed;
+	  bottom: auto;
+	  top: 0;
+	  max-height: 100vh;
+	  overflow: auto;
+	}
+	&.bottomPosition {
+	  position: absolute;
+	  bottom: 0;
+	  top: auto;
+	}
+	.title {
+	  text-align: left;
+	  padding-bottom: 40px;
+	  h3 {
+		font-size: 3.4rem;
+		padding-bottom: 1rem;
+		animation: unset;
+	  }
+	}
+	ul {
+	  list-style: none;
+	}
+	> ul {
+	  > li {
+		> a {
+		  font-family: 'TitilliumWeb SemiBold';
+		  font-size: 2.1rem;
+		}
+		ul {
+		  margin-bottom: 40px;
+		  li {
+			display: block;
+			a {
+			  font-size: 2rem;
+			  display: block;
+			  @include transition(0.3s);
+			  &:hover {
+				color: $red-accent;
+				background-color: #f3f2f3;
+			  }
+			}
+			&.current-menu-item {
+			  a {
+				color: $red-accent;
+				background-color: #f3f2f3;
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
+  &__content {
+	padding: 50px 90px !important;
+	h2 {
+	  font-family: 'TitilliumWeb SemiBold', sans-serif;
+	  font-size: 3rem;
+	  display: block;
+	  width: 100%;
+	  margin: 55px 0 40px;
+	  &:before {
+		content:'';
+		clear: both;
+		display: table;
+	  }
+	}
+	a.backlink {
+	  font-size: 1.9rem;
+	  float: right;
+	  @include transition(0.3s);
+	  &:hover {
+		color: $red-accent;
+	  }
+	}
+	.slider {
+	  position: relative;
+	  padding: 0 100px;
+	  margin-bottom: 45px;
+	  img {
+		width: 100%;
+		height: auto;
+	  }
+	  .galeria_wydrukow_slider {
+		width: calc(100% + 200px);
+		height: 370px;
+		margin: 0 -100px 30px;
+		.swiper-slide {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  .photo {
+			align-self: flex-start;
+		  }
+		}
+	  }
+	  .galeria_wydrukow_slider_nav {
+		a {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  img {
+			width: auto;
+			max-width: 70%;
+			height: auto;
+		  }
+		}
+	  }
+	  .swiper-button-prev, .swiper-button-next {
+		top: auto;
+		bottom: 0;
+	  }
+	}
+	p {
+	  font-size: 2rem;
+	  line-height: 1.1;
+	}
+	.materials_sls__benefits {
+	  padding: 50px 0 0 !important;
+	  .benefits_item {
+		margin-bottom: 40px;
+	  }
+	}
+	.materials_sls__benefits {
+	  .buttons {
+		display: flex;
+		justify-content: space-between;
+		a {
+		  margin: 0;
+		}
+	  }
+	}
+	.list_item {
+	  text-align: center;
+	  margin-bottom: 60px;
+	  ul {
+		text-align: left;
+	  }
+	}
+	.links_list {
+	  ul {
+		list-style: none;
+		li {
+		  margin-bottom: 10px;
+		  a {
+			font-size: 2rem;
+			&:hover {
+			  color: $red-accent;
+			}
+		  }
+		  &:after {
+			content: "";
+			display: inline-block;
+			vertical-align: middle;
+			width: 15px;
+			height: 15px;
+			margin-left: 5px;
+			border-bottom: 1px solid $red-accent;
+			border-right: 1px solid $red-accent;
+			transform: rotate(-45deg);
+			transition: all .4s ease-in-out;
+			transform-origin: 50% 0;
+		  }
+		}
+	  }
+	}
+  }
+
+  @include media-breakpoint-down(sm) {
+	&__aside_wrapper {
+	  display: none;
+	}
+	&__mobile-aside {
+	  background-color: #efefef;
+	  width: 100%;
+	  .title {
+		padding: 20px;
+		text-align: center;
+		position: relative;
+		h3 {
+		  font-family: 'TitilliumWeb SemiBold';
+		  font-size: 2.4rem;
+		}
+		a.prev {
+		  background: none;
+		  width: 2.7rem;
+		  height: 3.1rem;
+		  margin-top: -1.8rem;
+		  overflow: hidden;
+		  position: absolute;
+		  left: 30px;
+		  top: 50%;
+		  display: block;
+		  transform: scale(.9);
+		  &:before {
+			content: "";
+			position: absolute;
+			top: -2.3rem;
+			right: -2.1rem;
+			width: 2.1rem;
+			height: .1rem;
+			background: $red-accent;
+			transform-origin: top right;
+			transform: rotate(315deg);
+		  }
+		  &:after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: -3.2rem;
+			width: 2.1rem;
+			height: .1rem;
+			background: $red-accent;
+			transform-origin: bottom right;
+			transform: rotate(45deg);
+		  }
+		  &.draw_nav_arrow {
+			&:before {
+			  top: 0;
+			  right: 0.5rem;
+			  transition: all 0.25s ease-in-out;
+			}
+			&:after {
+			  top: 95%;
+			  left: .2rem;
+			  transition: all 0.25s ease-in-out;
+			  transition-delay: 0.25s;
+			}
+		  }
+		}
+
+		a.next {
+		  background: none;
+		  width: 2.7rem;
+		  height: 3.2rem;
+		  margin-top: -1.8rem;
+		  overflow: hidden;
+		  position: absolute;
+		  right: 30px;
+		  top: 50%;
+		  display: block;
+		  transform: scale(.9);
+		  &:before {
+			content: "";
+			position: absolute;
+			bottom: 50%;
+			right: -3.2rem;
+			width: 2.1rem;
+			height: .1rem;
+			background: $red-accent;
+			transform-origin: top left;
+			transform: rotate(45deg);
+		  }
+		  &:after {
+			content: "";
+			position: absolute;
+			bottom: -2.3rem;
+			left: -2.1rem;
+			width: 2.1rem;
+			height: .1rem;
+			background: $red-accent;
+			transform-origin: bottom left;
+			transform: rotate(315deg);
+		  }
+		  &.draw_nav_arrow {
+			&:before {
+			  bottom: 95%;
+			  right: 0rem;
+			  transition: all 0.25s ease-in-out;
+			  transition-delay: 0.25s;
+			}
+			&:after {
+			  bottom: 0;
+			  left: 0.5rem;
+			  transition: all 0.25s ease-in-out;
+			}
+		  }
+		}
+	  }
+	  .nav {
+		padding: 5px 0 10px;
+		text-align: center;
+		border-top: 1px solid #dedede;
+		position: relative;
+		.open_nav {
+		  position: relative;
+		  display: block;
+		  width: 100%;
+		  padding-bottom: 20px;
+		  i {
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			margin-left: -20px;
+			width: 40px;
+			height: 16px;
+			overflow: hidden;
+			transform: scale(.8);
+			transition: all 0.3s ease-out;
+			&:before {
+			  content: "";
+			  position: absolute;
+			  top: 100%;
+			  left: -1.2rem;
+			  width: 3.1rem;
+			  height: 0.1rem;
+			  background: $red-accent;
+			  transform-origin: top right;
+			  transform: rotate(315deg);
+			}
+			&:after {
+			  content: "";
+			  position: absolute;
+			  top: 50%;
+			  left: -3.2rem;
+			  width: 3.1rem;
+			  height: 0.1rem;
+			  background: $red-accent;
+			  transform-origin: bottom right;
+			  transform: rotate(45deg);
+			}
+			&.draw_nav_arrow {
+			  &:before {
+				top: 0;
+				left: 1rem;
+				transition: all 0.25s ease-in-out;
+				transition-delay: 0.25s;
+			  }
+			  &:after {
+				top: 95%;
+				left: -0.6rem;
+				transition: all 0.25s ease-in-out;
+			  }
+			}
+		  }
+		  &.opened {
+			i {
+			  transform: rotate(180deg) scale(.8);
+			}
+		  }
+		}
+		ul {
+		  position: absolute;
+		  top: 100%;
+		  left: 0;
+		  width: 100%;
+		  z-index: 2;
+		  display: none;
+		  li {
+			display: block;
+			border-top: 1px solid #dedede;
+			a {
+			  padding: 10px 0;
+			  background-color: #efefef;
+			  font-family: 'TitilliumWeb SemiBold';
+			  font-size: 2.4rem;
+			  display: block;
+			}
+		  }
+		}
+	  }
+	}
+	&__content {
+	  padding: 30px 15px !important;
+	  h2 {
+		float: left;
+		width: auto;
+		margin-top: 0;
+	  }
+	  a.backlink {
+		width: 40%;
+		text-align: right;
+	  }
+	  .slider {
+		padding: 0 40px;
+		img {
+		  width: 100%;
+		  margin: 0 auto;
+		  display: block;
+		}
+		.swiper-slide, .swiper-wrapper {
+		  height: auto;
+		}
+		.galeria_wydrukow_slider {
+		  width: 100%;
+		  height: auto;
+		  margin: 0 0 30px;
+		}
+		.swiper-button-prev, .swiper-button-next {
+		  top: 64%;
+		  bottom: auto;
+		}
+	  }
+	}
+  }
+  @include media-breakpoint-up(sm) {
+	&__mobile-aside {
+	  display: none;
+	}
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .materials_sls {
+	&__benefits {
+	  .benefits_item {
+		width: 50%;
+	  }
+	  h3 {
+		margin-bottom: 40px;
+		font-size: 2.6rem;
+	  }
+	  .buttons {
+		flex-direction: column;
+		justify-content: center !important;
+		text-align: center;
+		a {
+		  display: inline-block;
+		  margin-bottom: 20px !important;
+		  align-self: center;
+		  font-size: 2.2rem;
+		  font-family: 'TitilliumWeb Light' !important;
+		  width: 75%;
+		  padding: 1rem 0;
+		}
+	  }
+	  .list_item {
+		h4 {
+		  font-size: 2.4rem;
+		}
+	  }
+	}
+  }
+}

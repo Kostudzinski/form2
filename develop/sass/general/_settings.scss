@@ -1,0 +1,83 @@
+/* General */
+.clearfix:after {
+  clear: both;
+  display: table;
+  content: '';
+}
+
+::-webkit-input-placeholder {
+  opacity: 1 !important;
+}
+
+:-moz-placeholder {
+  opacity: 1 !important;
+}
+
+::-moz-placeholder {
+  opacity: 1 !important;
+}
+
+:-ms-input-placeholder {
+  opacity: 1 !important;
+}
+
+/* Layout */
+body, html {
+  position: relative;
+  overflow-x: hidden;
+}
+*::selection {
+  color: #fefefe;
+  background-color: #d22001;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'TitilliumWeb Light';
+  src: url("../fonts/Titillium_Web/TitilliumWeb-Light.ttf");
+}
+
+@font-face {
+  font-family: 'TitilliumWeb Regular';
+  src: url("../fonts/Titillium_Web/TitilliumWeb-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'TitilliumWeb SemiBold';
+  src: url("../fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'TitilliumWeb Bold';
+  src: url("../fonts/Titillium_Web/TitilliumWeb-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url("../fonts/ProximaNova/ProximaNova-Light.ttf");
+}
+
+/* Media rules */
+
+@media screen and (max-width: 1600px) {
+  html {
+	font-size: 9px;
+  }
+  .container {
+	max-width: 1100px !important;
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  html {
+	font-size: 7px;
+  }
+  .container {
+	max-width: 900px !important;
+  }
+}

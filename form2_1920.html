@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	
+	<title>Form 2</title>
+	
+	<link rel="stylesheet" href="build/css/style.css" />
+	<script>
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+
+		function openComputerScreen(evt, screen, text) {
+			// Declare all variables
+			var i, tabcontent, tablinks;
+
+			// Get all elements with class="tabcontent" and hide them
+			tabcontent = document.getElementsByClassName("screen_content");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+
+			// Get all elements with class="tablinks" and remove the class "active"
+			tablinks = document.getElementsByClassName("icon_link");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+
+			// Show the current tab, and add an "active" class to the button that opened the tab
+			document.getElementById(screen).style.display = "block";
+			evt.currentTarget.className += " active";
+
+			document.getElementById(text).style.display = "block";
+
+		}
+		
+		"use strict";
+
+		window.addEventListener("load", function load() {
+			window.removeEventListener("load", load, false);
+
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen_computer").click();
+		});
+	</script>
+</head>
+
+<body>
+<header class="animated fadeInDown">
+	<div class="top-line">
+		<div class="container">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-2 top-line_logo">
+					<a href="#"><img src="build/img/logo-cadxpert.png" alt=""></a>
+				</div>
+				<div class="col-2 top-line_info">
+					<a href="#"><img class="email" src="build/img/koperta.png" alt=""></a>
+					<img class="phone" src="build/img/Phone.png" alt="">
+					<a class="tel" href="tel:123072524">12 307 25 24</a>
+				</div>
+				<div class="col top-line_mobile">
+					<div class="mobile_call">
+						<a href="tel:123072524"><img src="build/img/phone-mobile-icon.png" alt=""></a>
+					</div>
+					<div class="button">
+						<div class="hamb"> <!-- Hamburger -->
+							<span></span>
+							<span></span>
+							<span></span>
+						</div> <!-- /-Hamburger -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar navbar-expand-lg">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+			<ul class="top-nav_menu navbar-nav mr-auto">
+				<li class="megamenu nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+					   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Drukarki 3D
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<div class="container">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</div>
+				</li>
+				
+				<li class="nav-item"><a class="nav-link" href="#">Skanery 3D</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Usługi 3D</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Materiały</a></li>
+				
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+					   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Strefa wiedzy
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<div class="container">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</div>
+				</li>
+				
+				<li class="nav-item"><a class="nav-link" href="#">O firmie</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+			</ul>
+		</div>
+	</nav>
+
+</header>
+
+<div class="header_form_2 animated fadeIn">
+	<div class="background_parallax" style="background-image: url(build/img/main-banner2.jpg);"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				<div class="header-content animated fadeIn">
+					<div class="header-content_title">
+						<img src="build/img/LOGO-Formlabs.png" alt=""><span>Form 2</span>
+						<div class="animate-h1-line-from-left"></div>
+					</div>
+					<div class="header-content_undertitle">
+						Precyzyjna drukarka 3D <br> dla profesjonalistów
+					</div>
+					<a class="header-content_button red-button" href="#">Sprawdź cenę
+						<div></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<img class="angle" src="build/img/white_angle_with_bottom_line_header.png" alt="">
+	<img class="header_form_2_printer animated fadeIn" src="build/img/Formheaderprinter.png" alt="">
+
+
+</div>
+
+<div class="left-fixed-buttons">
+	<div class="zamow left_fix_button animated fadeInRight">
+		<a href="#">
+			<div class="zamow_icon">
+				<img src="build/img/social-print-icon.png" alt="">
+			</div>
+			<div class="text">Zamów próbny wydruk</div>
+		</a>
+	</div>
+	
+	<div class="facebook show_on_hover left_fix_button animated fadeInRight">
+		<a href="#">
+			<div class="facebook_icon">
+				<img src="build/img/fb-logo.png" alt="">
+			</div>
+			<div class="text">Odwiedż nasz na FB</div>
+		</a>
+	</div>
+	
+	<div class="blog show_on_hover left_fix_button animated fadeInRight">
+		<a href="#">
+			<div class="blog_icon">
+				<img src="build/img/blog-logo.png" alt="">
+			</div>
+			<div class="text">Zapraszamy na bloga</div>
+		</a>
+	</div>
+</div>
+
+<main>
+	
+	<div class="bottom-nav">
+		<div class="progress-container">
+			<div class="progress-bar" id="myBar"></div>
+		</div>
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col">
+					<ul class="bottom-nav_menu">
+						<li><a href="#opis">Opis</a></li>
+						<li><a href="#materialy">Materiały</a></li>
+						<li><a href="#oprogramowianie">Oprogramowianie</a></li>
+						<li><a href="#specyfikacja">Specyfikacja</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<section id="opis" class="opis_form2" style="background-image: url(build/img/opis_back_angle.png);">
+		<img class="drukarka3d-abs" src="build/img/drukarka3d.png" alt="">
+		<div class="container">
+			<div class="row justify-content-end">
+				<div class="col-6">
+					<div class="opis-descr">
+						<div class="title animation-h1">
+							Najbardziej zaawansowana technologicznie drukarka 3D
+						</div>
+						<div class="text">
+							Drukarka 3D Formlabs Form 2 wykorzystuje technologię stereolitografii (SLA) do tworzenia precyzyjnych wydruków w najwyższej jakości. W połączeniu z łatwością obsługi i szybkością druku Form 2 znajduje zastosowanie w wielu branżach: od przemysłu do medycyny.
+						</div>
+						<div class="options">
+							<ul>
+								<li>
+									obszar roboczy<br>
+									<span>145 × 145 × 170 </span> mm
+								</li>
+								<li>
+									rozdzielczość warstw<br>
+									<span>25 – 50 – 100 </span> mikronów
+								</li>
+								<li>
+									wielkość plamki lasera<br>
+									<span>25 – 50 – 100 </span> mikronów
+								</li>
+								<li>
+									moc lasera<br>
+									<span>250W</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="video">
+		<div class="container">
+			<iframe src="https://www.youtube.com/embed/8tn5zA5bNSE" frameborder="0" allowfullscreen="allowfullscreen"
+			        data-link="https://www.youtube.com/watch?v=8tn5zA5bNSE"></iframe>
+		</div>
+	</section>
+	<!-- <section id="parameters" class="parameters_form2">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-6">
+					<ul>
+						<li>
+							<div class="red-line-el"></div>
+							<div class="title">
+								Wysoka precyzja dla skomplikowanych geometrii
+							</div>
+							<div class="content">
+								Ulepszony układ optyczny, podgrzewana komora robocza i większa moc lasera – to wszystko sprawia, że Form 2 w pełni wykorzystuje możliwości technologii SLA. Wyjątkowa gładkość powierzchni i dokładność druku są możliwe przy użyciu warstwy o wysokości zaledwie 25 mikronów.
+							</div>
+						</li>
+						<li>
+							<div class="red-line-el"></div>
+							<div class="title">
+								Łatwa wymiana żywicy
+							</div>
+							<div class="content">
+								Materiał uzupełnia się czysto i bezpiecznie. Urządzenie samo wykryje zmianę materiału i dostosuje ustawienia druku. Zautomatyzowany system podawania żywicy pozwala na bezobsługową pracę.
+							</div>
+						</li>
+						<li>
+							<div class="red-line-el"></div>
+							<div class="title">
+								Obsługa Plug&Play
+							</div>
+							<div class="content">
+								Sterowanie pracą drukarki odbywa się za pomocą dotykowego ekranu. Panel wyświetla podgląd wgranego projektu oraz czas druku i aktualną ilość naniesionych warstw. Wystarczy zaimportować model 3D i jednym kliknięciem rozpocząć wydruk.
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-5 printer_image animation-h1">
+					<img src="build/img/Form-2-printer-three-quarters-Hart.png" alt="">
+				</div>
+			</div>
+			
+		</div>
+	</section> -->
+	<section id="parameters" class="parameters_form2">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-6">
+					<ul>
+						<li>
+							<div class="red-line-el"></div>
+							<div class="gray-line-el"></div>
+							<div class="title">
+								Wysoka precyzja dla skomplikowanych geometrii
+							</div>
+							<div class="content">
+								Ulepszony układ optyczny, podgrzewana komora robocza i większa moc lasera – to wszystko sprawia, że Form 2 w pełni wykorzystuje możliwości technologii SLA. Wyjątkowa gładkość powierzchni i dokładność druku są możliwe przy użyciu warstwy o wysokości zaledwie 25 mikronów.
+							</div>
+						</li>
+						<li>
+							<div class="red-line-el"></div>
+							<div class="gray-line-el"></div>
+							<div class=""></div>
+							<div class="title">
+								Łatwa wymiana żywicy
+							</div>
+							<div class="content">
+								Materiał uzupełnia się czysto i bezpiecznie. Urządzenie samo wykryje zmianę materiału i dostosuje ustawienia druku. Zautomatyzowany system podawania żywicy pozwala na bezobsługową pracę.
+							</div>
+						</li>
+						<li>
+							<div class="red-line-el"></div>
+							<div class="gray-line-el"></div>
+							<div class="title">
+								Obsługa Plug&Play
+							</div>
+							<div class="content">
+								Sterowanie pracą drukarki odbywa się za pomocą dotykowego ekranu. Panel wyświetla podgląd wgranego projektu oraz czas druku i aktualną ilość naniesionych warstw. Wystarczy zaimportować model 3D i jednym kliknięciem rozpocząć wydruk.
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-5 printer_image animation-h1">
+					<img src="build/img/Form-2-printer-three-quarters-Hart.png" alt="">
+				</div>
+			</div>
+		
+		</div>
+	</section>
+	<section class="dodatkowe_cechy">
+		<div class="container">
+			<div class="title">
+				<h1 class="animation-h1">Dodatkowe cechy
+					<div class="animate-h1-line-from-left"></div>
+				</h1>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<div class="item">
+						<div class="item_icon">
+							<img src="build/img/Ecosystem-Icon.png" alt="">
+						</div>
+						<div class="item_title">
+							Kompletny ekosystem
+						</div>
+						<div class="item_descr">
+							Na system druku 3D składa się oprogramowanie PreForm oraz urządzenia do postprocessingu Form Wash i Form Cure. Do każdej drukarki dostarczany jest także FinishKit – kompletny zestaw narzędzi do obróbki modeli.
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="item">
+						<div class="item_icon">
+							<img src="build/img/Wygodne-Icon.png" alt="">
+						</div>
+						<div class="item_title">
+							Wygodne przesyłanie plików
+						</div>
+						<div class="item_descr">
+							Wgraj projekty do druku poprzez Wi-Fi, USB, Ethernet lub USB. Przechowuj pliki na wbudowanym dysku twardym o pojemności 1 GB.
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="item">
+						<div class="item_icon">
+							<img src="build/img/Zasób_2-kopia.png" alt="">
+						</div>
+						<div class="item_title">
+							Wsparcie techniczne
+						</div>
+						<div class="item_descr">
+							Możesz liczyć na naszą pomoc na etapie wyboru drukarki 3D, a także po zakupie. Zapewniamy profesjonalne szkolenia, wsparcie techniczne oraz opiekę pogwarancyjną.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="materialy" class="materiały_do_druku_3d_form2">
+		<div class="container">
+			<div class="title">
+				<h1 class="animation-h1">Materiały do druku 3D
+					<div class="animate-h1-line-from-left"></div>
+				</h1>
+			</div>
+		</div>
+		<div class="container">
+			<div class="materiały_do_druku_3d_form2_tabs">
+				<div class="row no-gutters justify-content-between">
+					<div class="col">
+						<div class="tablinks" onclick="openCity(event, 'tab1')" id="defaultOpen">
+							<div class="name">Standardowe</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="tablinks" onclick="openCity(event, 'tab2')">
+							<div class="name">Inżynieryjne</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="tablinks" onclick="openCity(event, 'tab3')">
+							<div class="name">Odlewnicze</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="tablinks" onclick="openCity(event, 'tab4')">
+							<div class="name">Stomatologiczne</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="tab1" class="tabcontent">
+				<div class="row">
+					<div class="col-4">
+						<div class="left-content">
+							<div class="image">
+								<img src="build/img/towers.png" alt="">
+							</div>
+							<a class="red-button" href="#">Dowiedz się więcej
+								<div></div>
+							</a>
+						</div>
+					</div>
+					<div class="col-7">
+						<div class="right-content">
+							<div class="text">
+								<div class="title">Wyjątkowa wydajność i wysoka jakość.</div>
+								Standard Resin to zmodyfikowany materiał dla zapewnienia najwyższej jakości rezultatów. Standardowa żywica Formlabs zachowuje wysoką dokładność modelu bez ryzyka utraty wytrzymałości.
+							</div>
+							<ul>
+								<li>
+									<div class="title">• Materiał dostępny jest w czterech kolorach:</div>
+									Transparentny (Clear), biały (White), szary (Gray) oraz czarny (Black)
+								</li>
+								<li>
+									<div class="title">• Wysoka rozdzielczość</div>
+									Starannie opracowane żywice dla wymagających detali pozwolą uchwycić najdrobniejsze elementy w modelu.
+								</li>
+								<li>
+									<div class="title">• Wytrzymałość i precyzja</div>
+									Żywice Standard są polecane do tworzenie dokładnych i niezawodnych elementów, idealne do szybkiego prototypowania produktu.
+								</li>
+								<li>
+									<div class="title">• Wykończenie powierzchni</div>
+									Idealnie gładka zaraz po wyjęciu z drukarki, części wydrukowane w technologii SLA mają połysk i wykończenie takie jak produkt końcowy.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="tab2" class="tabcontent">
+				<div class="row">
+					<div class="col-4">
+						<div class="left-content">
+							<div class="image">
+								<img src="build/img/Inżynieryjne.png" alt="">
+							</div>
+							<a class="red-button" href="#">Dowiedz się więcej
+								<div></div>
+							</a>
+						</div>
+					</div>
+					<div class="col-7">
+						<div class="right-content">
+							<!-- <div class="text">
+								<div class="title">Wyjątkowa wydajność i wysoka jakość.</div>
+								Standard Resin to zmodyfikowany materiał dla zapewnienia najwyższej jakości rezultatów. Standardowa żywica Formlabs zachowuje wysoką dokładność modelu bez ryzyka utraty wytrzymałości.
+							</div> -->
+							<ul>
+								<li>
+									<div class="title">• Tough</div>
+									Materiał imitujący ABS o porównywalnej sprężystości i odporności na rozciąganie. Idealny materiał dla prototypów funkcjonalnych.
+								</li>
+								<li>
+									<div class="title">• Durable</div>
+									Materiał trwały, symulujący polipropylen (PP), posiada porównywalnie niski moduł sprężystości i odporność na uderzenia.
+								</li>
+								<li>
+									<div class="title">• Flexible</div>
+									Elastyczny materiał osiąga twardość zaledwie 80A twardości gumy (w skali Shore’a). Do modeli ulegających zginaniu i kompresji.
+								</li>
+								<li>
+									<div class="title">• High Temp</div>
+									Do odlewania i kształtowania termicznego. Odporność na temperaturę 289°C przy 0,45 MPa jest najwyższą na rynku materiałów do druku 3D.
+								</li>
+								<li>
+									<div class="title">• Grey Pro NOWOŚĆ</div>
+									Żywica o zwiększonej wytrzymałości do tworzenia funkcjonalnych prototypów. Modele nadają się do wielokrotnego testowania.
+								</li>
+								<li>
+									<div class="title">• Rigid NOWOŚĆ</div>
+									Żywica została wzmocniona szkłem, co zapewnia wydrukom sztywność oraz nadaje im jeszcze gładszą powierzchnię.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="tab3" class="tabcontent">
+				<div class="row">
+					<div class="col-4">
+						<div class="left-content">
+							<div class="image">
+								<img src="build/img/Odlewnicze.png" alt="">
+							</div>
+							<a class="red-button" href="#">Dowiedz się więcej
+								<div></div>
+							</a>
+						</div>
+					</div>
+					<div class="col-7">
+						<div class="right-content">
+							<!-- <div class="text">
+								<div class="title">Wyjątkowa wydajność i wysoka jakość.</div>
+								Standard Resin to zmodyfikowany materiał dla zapewnienia najwyższej jakości rezultatów. Standardowa żywica Formlabs zachowuje wysoką dokładność modelu bez ryzyka utraty wytrzymałości.
+							</div> -->
+							<ul>
+								<li>
+									<div class="title">• High Temp</div>
+									<br>
+									Do procesów produkcji takich jak: odlewanie i kształtowanie termiczne. Odporność na temperaturę 289°C przy 0,45 MPa jest najwyższą na rynku materiałów do druku 3D.
+								</li>
+								<br>
+								<li>
+									<div class="title">• Castable</div>
+									<br>
+									Materiał wypala się całkowicie, nie pozostawiając popiołu. Pozwala uchwycić najdrobniejsze szczegóły modelu przy zachowaniu gładkiej powierzchni.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="tab4" class="tabcontent">
+				<div class="row">
+					<div class="col-4">
+						<div class="left-content">
+							<div class="image">
+								<img src="build/img/Stomatologiczne.png" alt="">
+							</div>
+							<a class="red-button" href="#">Dowiedz się więcej
+								<div></div>
+							</a>
+						</div>
+					</div>
+					<div class="col-7">
+						<div class="right-content">
+							<!-- <div class="text">
+								<div class="title">Wyjątkowa wydajność i wysoka jakość.</div>
+								Standard Resin to zmodyfikowany materiał dla zapewnienia najwyższej jakości rezultatów. Standardowa żywica Formlabs zachowuje wysoką dokładność modelu bez ryzyka utraty wytrzymałości.
+							</div> -->
+							<ul>
+								<li>
+									<div class="title">• Dental Model</div>
+									Do modeli koronowo-mostowych z wymiennymi matrycami z zachowaniem stałego dopasowania. Precyzja wydruków w zakresie ± 35 mikrometrów. Gładkie, matowe wykończenie powierzchni i kolor podobny do gipsu ułatwiają przejście z produkcji modelu analogowego na cyfrowy.
+								</li>
+								<li>
+									<div class="title">• Dental SG</div>
+									Materiał biokompatybilny pierwszej klasy (EN-ISO 10993-1:2009/AC:2010, USP Class VI), przeznaczony dla dentystów do tworzenia precyzyjnych prowadnic chirurgicznych, modeli stomatologicznych lub podobnych detali.
+								</li>
+								<li>
+									<div class="title">• Dental LT Clear</div>
+									Żywica biokompatybilna z klasą IIa o wysokiej odporności na zrywanie i zużycie. Nadaje się do szyn, elementów mocujących i innych bezpośrednich urządzeń ortodontycznych. Transparentna barwa zapewnia wysoką przejrzystość optyczną dla pięknych produktów końcowych.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="oprogramowianie" class="form_2_block_with_comp">
+		<div class="container">
+			<div class="row align-items-start">
+				<div class="col-6">
+					<div class="form_2_block_with_comp_content">
+						<div class="form_2_block_with_comp_title animation-h1">
+							Poznaj intuicyjne oprogramowanie
+							<strong>PreForm</strong>. Przygotuj projekt i ustaw wydruk jednym kliknięciem.
+						</div>
+						<div class="form_2_block_with_comp_center">
+							<div class="form_2_block_with_comp_center_icons">
+								<div class="icon_link icon_link1 fadeIn_img"
+								     onclick="openComputerScreen(event, 'computer_screen1', 'computer_text1')"
+								     id="defaultOpen_computer">
+									<img src="build/img/Zasób1.png" alt="">
+								</div>
+								<div class="icon_link icon_link2 fadeIn_img"
+								     onclick="openComputerScreen(event, 'computer_screen2', 'computer_text2')">
+									<img src="build/img/Zasób2.png" alt="">
+								</div>
+								<div class="icon_link icon_link3 fadeIn_img"
+								     onclick="openComputerScreen(event, 'computer_screen3', 'computer_text3')">
+									<img src="build/img/Zasób3.png" alt="">
+								</div>
+							</div>
+							<div class="form_2_block_with_comp_center_words">
+								<div id="computer_text1"
+								     class="screen_content">Automatyczna orientacja modeli na platformie roboczej
+								</div>
+								<div id="computer_text2"
+								     class="screen_content">Inteligentne rozmieszczanie struktur podporowych
+								</div>
+								<div id="computer_text3"
+								     class="screen_content">Intuicyjne edytowanie i zarządzanie modelami
+								</div>
+							</div>
+							<a class="red-button" href="#">Dowiedz się więcej
+								<div></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="background">
+			<img id="computer_screen1" class="screen_content" src="build/img/form2_block_with_comp.jpg" alt="">
+			<img id="computer_screen2" class="screen_content" src="build/img/form2_block_with_comp2.jpg" alt="">
+			<img id="computer_screen3" class="screen_content" src="build/img/form2_block_with_comp3.jpg" alt="">
+		</div>
+	</section>
+	
+	<section id="specyfikacja" class="specyfikacja">
+		<div class="container">
+			<div class="title">
+				<h1 class="animation-h1">Specyfikacja
+					<div class="animate-h1-line-from-left"></div>
+				</h1>
+			</div>
+			<a class="red-button" href="#">Pobierz pełną specyfikację
+				<div></div>
+			</a>
+		</div>
+		<img class="gray_triangle_bg" src="build/img/testimonials_gray_triangle2.png" alt="">
+	</section>
+	
+	<section class="aktualnosci form2">
+		<div class="container">
+			<div class="title">
+				<h1 class="animation-h1">Zastosowania drukarek 3D Stratasys
+					<div class="animate-h1-line-vertical"></div>
+				</h1>
+			</div>
+		</div>
+		<div class="container content-margin">
+			<div class="row">
+				<div class="col-4">
+					<div class="news-post">
+						<a href="#">
+							<div class="news-post_photo" style="background-image: url(build/img/news-post1.jpg);">
+							</div>
+							<div class="news-post_title">
+								Nowości od Formlabs: dwie inżynieryjne żywice
+							</div>
+						</a>
+					</div>
+					<div class="news-post">
+						<a href="#">
+							<div class="news-post_photo" style="background-image: url(build/img/news-post2.jpg);">
+							</div>
+							<div class="news-post_title">
+								Formlabs Color Kit, czyli drukowanie 3D w kolorze
+							</div>
+						</a>
+					</div>
+					<div class="news-post">
+						<a href="#">
+							<div class="news-post_photo" style="background-image: url(build/img/news-post3.jpg);">
+							</div>
+							<div class="news-post_title">
+								Czyszczenie magazynów: drukarki 3D w niższych cenach!
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-8">
+					<div class="news-big">
+						<a href="#">
+							<div class="news-big_image">
+								<img src="build/img/news-big.jpg" alt="">
+							</div>
+							<div class="news-big_text">
+								<div class="news-big_title">
+									Nowości od Formlabs: dwie inżynieryjne żywice
+								</div>
+								<div class="news-big_words">
+									Twórz jeszcze bardziej precyzyjne modele w technologii SLA. Prezentujemy dwie nowe żywice Grey Pro i Rigid, które swoją premierę miały...
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<div class="quote_block fadeIn_img">
+						<div class="quote_text">
+							Wyróżnienie w kategorii Najlepsza Zagraniczna Desktopowa Drukarka 3D Roku 2017
+						</div>
+						<div class="quote_author">
+							- Centrum Druku 3D
+						</div>
+						<img class="quote_up" src="build/img/quotes_up.png" alt="">
+						<img class="quote_down" src="build/img/quotes_down.png" alt="">
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="quote_block fadeIn_img">
+						<div class="quote_text">
+							Najlepsza drukarka 3D w technologii SLA w 2018 roku
+						</div>
+						<div class="quote_author">
+							- portal All3dp.com
+						</div>
+						<img class="quote_up" src="build/img/quotes_up.png" alt="">
+						<img class="quote_down" src="build/img/quotes_down.png" alt="">
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="quote_block fadeIn_img">
+						<div class="quote_text">
+							I would recommend it over any other SLA printer barring true industrial models.
+						</div>
+						<div class="quote_author">
+							- techcrunch.com
+						</div>
+						<img class="quote_up" src="build/img/quotes_up.png" alt="">
+						<img class="quote_down" src="build/img/quotes_down.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="galeria_wydrukow">
+		<div class="container">
+			<div class="title">
+				<h1 class="animation-h1">Galeria wydruków
+					<div class="animate-h1-line-from-right"></div>
+				</h1>
+			</div>
+		</div>
+		<div class="container">
+			<div class="swiper-container galeria_wydrukow_slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="photo">
+							<img src="build/img/kubik.png" alt="" />
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="photo">
+							<img src="build/img/kubik.png" alt="" />
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="photo">
+							<img src="build/img/kubik.png" alt="" />
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="photo">
+							<img src="build/img/kubik.png" alt="" />
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="photo">
+							<img src="build/img/kubik.png" alt="" />
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="photo">
+							<img src="build/img/kubik.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-container galeria_wydrukow_slider_nav">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#" data-hash="0" class="active">
+							<img src="build/img/kubik.png" alt="" />
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" data-hash="1">
+							<img src="build/img/kubik.png" alt="" />
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" data-hash="2">
+							<img src="build/img/kubik.png" alt="" />
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" data-hash="3">
+							<img src="build/img/kubik.png" alt="" />
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" data-hash="4">
+							<div class="video">
+								<img src="build/img/kubik.png" alt="" />
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" data-hash="5">
+							<img src="build/img/kubik.png" alt="" />
+						</a>
+					</div>
+				</div>
+				<div class="swiper-button-prev animation_arrow"></div>
+				<div class="swiper-button-next animation_arrow"></div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section class="product_line_formlabs">
+		<div class="container">
+			<div class="title">
+				<h1 class="animation-h1">Linia produktów Formlabs
+					<div class="animate-h1-line-from-right"></div>
+				</h1>
+			</div>
+		</div>
+		<div class="container">
+			<div class="swiper-container product_line_slider">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<img src="build/img/Form2printer.png" alt="">
+						<div class="name">Form 2</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="build/img/FormWash.png" alt="">
+						<div class="name">Form Wash</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="build/img/FormCure.png" alt="">
+						<div class="name">Form Cure</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="build/img/Fuse1.png" alt="">
+						<div class="name">Form Fuse</div>
+					</div>
+				</div>
+				
+				<div class="swiper-button-prev animation_arrow"></div>
+				<div class="swiper-button-next animation_arrow"></div>
+			</div>
+		
+		
+		</div>
+	</section>
+
+
+</main>
+<footer>
+	<div class="container footer-content">
+		<div class="row justify-content-between footer-info">
+			<div class="col-3">
+				<div class="footer-info_logo">
+					<img src="build/img/logo-cadxpert-footer.png" alt="">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="footer-info_social">
+					<a href=""><img src="build/img/fb.png" alt=""></a>
+					<a href=""><img src="build/img/yt.png" alt=""></a>
+					<a href=""><img src="build/img/blog.png" alt=""></a>
+				</div>
+			</div>
+			<div class="col-9">
+				<div class="footer-info_text">
+					Jesteśmy autoryzowanym resellerem produktów Statasys, MakerBot, Formlabs. Oferujemy Drukarki 3D, Skanery 3D, Usługi druku 3D oraz Oprogramowanie CAD/CAM/CAE.
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="row no-gutters blocks">
+			<div class="col-3 item">
+				Dane kontaktowe: <br><br><br>
+				
+				Telefon:<br>
+				+48 12 307 25 24<br>
+				+48 607 982 124<br>
+				+48 501 473 209 <br><br>
+				
+				Mail: info@druk3d.cx
+			
+			</div>
+			<div class="col-3 item">
+				<br><br><br>
+				Ciepłownicza 23<br>
+				31-574 Kraków<br>
+				Poland<br><br>
+				
+				NIP: 6751526384 <br>
+				KRS: 0000580592
+			</div>
+			<div class="col-3 item">
+				Oferta
+				<br><br>
+				<ul>
+					<li>- Drukarki 3D</li>
+					<li>- Materiały do druku 3D</li>
+					<li>- Skanery 3D</li>
+					<li>- Usługi druku 3D</li>
+					<li>- Usługi skanowania</li>
+					<li>- Wsparcie</li>
+					<li>- Finansowanie</li>
+				</ul>
+			</div>
+			<div class="col-3 item">
+				Strefa wiedzy
+				<br><br>
+				<ul>
+					<li>- Poznaj technologie</li>
+					<li>- Wybierz swoją branżę</li>
+					<li>- Znajdź zastosowanie</li>
+					<li>- Szkolenia</li>
+					<li>- Case study</li>
+					<li>- Do pobrania</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="copyright">
+				©2014-2016 CadXpert. All rights reserved. Producent i dystrybutor drukarek 3d.
+			</div>
+		</div>
+	</div>
+</footer>
+<script async defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script async defer src="build/js/scripts.js"></script>
+</body>
+</html>
